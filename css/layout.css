@@ -1,1 +1,53 @@
 
+
+.logo{
+	height:95px;
+    width:20%;
+    margin-left:50px;
+    
+    
+}
+
+
+
+
+
+ul li a{
+    font-size: 20px;
+    font-weight: 400;
+    color:rgb(51, 121, 10);
+    margin-top: 2px;
+}
+
+
+
+section#top nav{
+    background-color:rgb(250, 248, 248);
+    height:4.8em;
+
+}
+
+nav li{
+    font-family: sans-serif;
+    font-size: 50px;
+}
+
+div i{
+    color:rgb(51,121,10);
+}
+
+.foto{
+    height:250px;
+}
+
+
+.page-footer{
+background-color: rgb(235,235,235);
+
+
+}
+
+    
+.container{
+    color:green;
+}
