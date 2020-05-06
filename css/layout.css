@@ -1,15 +1,13 @@
 
-
-.logo{
-	height:95px;
-    width:20%;
-    margin-left:50px;
-    
+body{
+    background-color: #f6f5f5;
     
 }
-
-
-
+.logo{
+	height:65px;
+    width:20%;
+    margin-left:50px;   
+}
 
 
 ul li a{
@@ -19,21 +17,41 @@ ul li a{
     margin-top: 2px;
 }
 
-
+.icon-color{
+    color:grey;
+    
+}
 
 section#top nav{
-    background-color:rgb(250, 248, 248);
+    background-color:transparent;
     height:4.8em;
-
 }
+/*
+#top{
+	background-image: url("../imagens/world.png");
+	background-repeat: no-repeat;
+    background-size:cover;
+    height:800px;
+  
+}*/
 
 nav li{
     font-family: sans-serif;
     font-size: 50px;
 }
 
-div i{
-    color:rgb(51,121,10);
+h2{
+    color:#4a3a3a;
+}
+
+#info{
+    margin-left: 500px;
+    margin-top: 100px;
+}
+
+#info p{
+    color:#4a3a3a;
+    font-weight: bold;
 }
 
 .foto{
@@ -42,8 +60,7 @@ div i{
 
 
 .page-footer{
-background-color: rgb(235,235,235);
-
+background-color: rgb(18, 136, 34);
 
 }
 
@@ -51,3 +68,128 @@ background-color: rgb(235,235,235);
 .container{
     color:green;
 }
+
+
+
+
+
+
+
+/*Page do produto.html */
+
+section#produto nav {
+    background-color: transparent;
+    height:4.8em;
+    margin-bottom: 100px;
+}
+
+#banner{
+    background-image: url("../imagens/world.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    margin-bottom:80px;
+}
+
+.search-box{
+    margin-top:220px;
+}
+
+.pesquisa{  
+    margin-top:0px;
+    margin-left:550px;
+    border:solid 1px green;
+    width: 408.5px;
+    height:37.5px;
+    padding-left:5px;
+    background-color: white;
+}
+
+#texto{
+    width:350px;
+    height: 35px;
+    float: left;
+    font-family: Arial;
+    font-size: 20px;
+    
+}
+
+#botao{
+    
+    width: 50px;
+    height: 45px;
+    background-color: green;    
+    cursor: pointer;
+    
+   
+}
+
+.btn{
+    background-color: #64dd17 ;
+}
+
+.btn:hover{
+    background-color: rgb(77, 180, 17);
+}
+
+.filtro{
+
+    margin-left: 550px;
+    margin-top:10px;
+    margin-bottom: 130px;
+}
+
+.filtro span{
+    
+    font-size: 14px;
+    color:green;
+    margin-right:40px;
+   
+}
+
+.por-produto{
+
+     background-color: greenyellow;
+    width: 120px;
+    font-size:10px;
+}
+
+.por-local{
+    background-color: greenyellow;
+    width: 100px;
+}
+
+.por-categoria{
+    background-color: greenyellow;
+    width: 140px;
+
+}
+
+
+.foto-produtos{  
+    margin-bottom: 80px;
+
+}
+
+.botao{
+    margin-top:20px;
+    margin-right:30px;
+}
+
+.alimentos{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top:10px;
+    color: indigo;
+
+}
+.pics{
+    width:300px;
+    height:200px;
+    
+}
+
+.caixas{
+    margin-top:50px;
+
+    }
