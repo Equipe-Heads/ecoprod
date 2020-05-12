@@ -84,10 +84,10 @@ section#produto nav {
 }
 
 #banner{
-    background-image: url("../imagens/world.png");
+    background-image: url("../imagens/world.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 550px;
+    height: 420px;
     margin-bottom:80px;
 }
 
