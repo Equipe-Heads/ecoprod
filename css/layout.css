@@ -145,7 +145,7 @@ section#produto nav {
 }
 
 .btn{
-    background-color: #64dd17 ;
+    background-color: #748d58 ;
 }
 
 .btn:hover{
@@ -169,18 +169,19 @@ section#produto nav {
 
 .por-produto{
 
-     background-color: greenyellow;
+    background-color: #a2c07f;
     width: 120px;
     font-size:10px;
 }
 
 .por-local{
-    background-color: greenyellow;
+    background-color: #a2c07f;
+    ;
     width: 100px;
 }
 
 .por-categoria{
-    background-color: greenyellow;
+    background-color: #a2c07f;
     width: 140px;
 
 }
