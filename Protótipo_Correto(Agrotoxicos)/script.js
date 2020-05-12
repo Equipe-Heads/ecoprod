@@ -154,7 +154,7 @@ catchData().catch(error => {
 
 var linhas;
 async function catchData() {
-    const response = await fetch('dados.csv');
+    const response = await fetch('dados.txt');
     const data = await response.text();
 
     linhas = data.split('\n').slice(1);
