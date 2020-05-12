@@ -43,19 +43,20 @@ nav li{
 
 #info{
     margin-left: 10%;
-    margin-top: 100px;
+    margin-top: 80px;
     text-align: left;
     display:flex;
-    
+
     
 
 }
 
 #info p{
     color:#4a3a3a;
-    font-size: 1.9em;
+    font-size: 1.5em;
     text-align: justify;
-    
+    padding-right:20%;
+    margin-top:2em;
     
     }
 
@@ -70,9 +71,15 @@ h2{
     height:250px;
 }
 
+#freepik{
+    margin-left:1350px;
+    color:rgb(182, 171, 141);
+    
+   
+}
 
 .page-footer{
-background-color: rgb(18, 136, 34);
+background-color: #69995D;
 
 }
 
