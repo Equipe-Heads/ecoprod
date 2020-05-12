@@ -42,9 +42,12 @@ nav li{
 
 
 #info{
-    margin-left: 200px;
+    margin-left: 10%;
     margin-top: 100px;
     text-align: left;
+    display:flex;
+    
+    
 
 }
 
@@ -52,6 +55,8 @@ nav li{
     color:#4a3a3a;
     font-size: 1.9em;
     text-align: justify;
+    
+    
     }
 
 h2{
@@ -72,11 +77,6 @@ background-color: rgb(18, 136, 34);
 }
 
     
-.container{
-    color:green;
-}
-
-
 
 
 
@@ -96,6 +96,8 @@ section#produto nav {
     background-size: cover;
     height: 500px;
     margin-bottom:80px;
+    padding:0.2em;
+    
 }
 
 .search-box{
