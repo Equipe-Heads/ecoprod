@@ -6,7 +6,7 @@ body{
 .logo{
 	height:65px;
     width:20%;
-    margin-left:50px;   
+    margin-left:20px;   
 }
 
 
@@ -24,26 +24,32 @@ ul li a{
 
 section#top nav{
     background-color:transparent;
-    height:4.3em;
+    height:4.8em;
 }
-/*
-#top{
-	background-image: url("../imagens/world.png");
-	background-repeat: no-repeat;
-    background-size:cover;
-    height:800px;
-  
-}*/
 
 nav li{
     font-family: sans-serif;
     font-size: 50px;
 }
 
+.sidenav{
+    background-color: rgb(20, 66, 8);
+    padding-top:100px;
+    
+}
+
+.sidenav li a{
+    font-size: 24px;
+    margin:10px;
+    border-bottom: 1px solid #ffff;
+    color:#ffff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 
 #info{
     margin-left: 10%;
-    margin-top: 80px;
+    margin-top: 2%;
     text-align: left;
     display:flex;   
 
@@ -70,7 +76,7 @@ h2{
 }
 
 #freepik{
-    margin-left:1540px;
+    margin-left:1300px;
     color:rgb(182, 171, 141);
     
    
@@ -85,22 +91,18 @@ h2{
 
 /*FOOTER*/
 
+
 #email{
-    width:350px;
+    width:300px;
     height: 35px;    
     font-family: Arial;
     font-size: 20px;    
     background-color: white;
     padding-left:10px;
+    
 }
 
-#saiba-mais{
-    margin-left:12px;
-}
 
-div#social{
-    float:right;
-}
 
 div#social ul li {
 	width:32px;
@@ -117,7 +119,7 @@ div#social ul li a{
     text-indent: -99999em;
     
 }
-    
+
 div#social ul li:nth-child(1) a{background-position: 0 0;}
 div#social ul li:nth-child(2) a{background-position: -129px 0;}
 
@@ -125,33 +127,19 @@ div#social ul li:nth-child(1) a:hover {background-position: 0 -32px;}
 div#social ul li:nth-child(2) a:hover {background-position: -128px -32px;}
 
 
-.page-footer{
-    background-color: #7EA478;
-    height:218px;
-    }
-    
-
-#criado{
-   margin-top:15px;
-}
-
-.criado-por-heads{
-    background-color: #496845;
-    padding-left:260px;
-    padding-top: 4px;
-    
-}
-
 #logo-heads{
     height:50px;
-    margin-left:390px;
+    
 }
 
-
-
-
-
-
+.page-footer{
+    background-color: #7EA478;
+    
+    }
+    
+    .page-footer .footer-copyright{
+        background-color: #496845;
+    }
 
 
 
@@ -174,6 +162,7 @@ section#produto nav {
     height: 500px;
     margin-bottom:80px;
     padding:0.2em;
+    margin-top: 7px;
     
 }
 
