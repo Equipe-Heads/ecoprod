@@ -45,9 +45,7 @@ nav li{
     margin-left: 10%;
     margin-top: 80px;
     text-align: left;
-    display:flex;
-
-    
+    display:flex;   
 
 }
 
@@ -72,7 +70,7 @@ h2{
 }
 
 #freepik{
-    margin-left:1350px;
+    margin-left:1540px;
     color:rgb(182, 171, 141);
     
    
@@ -82,12 +80,80 @@ h2{
     margin-bottom: 100px;
 }
 
-.page-footer{
-background-color: #69995D;
 
+
+
+/*FOOTER*/
+
+#email{
+    width:350px;
+    height: 35px;    
+    font-family: Arial;
+    font-size: 20px;    
+    background-color: white;
+    padding-left:10px;
 }
 
+#saiba-mais{
+    margin-left:12px;
+}
+
+div#social{
+    float:right;
+}
+
+div#social ul li {
+	width:32px;
+	height:32px;
+	float:left;
+	margin-right: 15px;
+}
+
+
+div#social ul li a{
+	background:url("../imagens/social.png");
+	display:block;
+	height: 100%;
+    text-indent: -99999em;
     
+}
+    
+div#social ul li:nth-child(1) a{background-position: 0 0;}
+div#social ul li:nth-child(2) a{background-position: -129px 0;}
+
+div#social ul li:nth-child(1) a:hover {background-position: 0 -32px;}
+div#social ul li:nth-child(2) a:hover {background-position: -128px -32px;}
+
+
+.page-footer{
+    background-color: #7EA478;
+    height:218px;
+    }
+    
+
+#criado{
+   margin-top:15px;
+}
+
+.criado-por-heads{
+    background-color: #496845;
+    padding-left:260px;
+    padding-top: 4px;
+    
+}
+
+#logo-heads{
+    height:50px;
+    margin-left:390px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -176,7 +242,6 @@ section#produto nav {
 
 .por-local{
     background-color: #a2c07f;
-    ;
     width: 100px;
 }
 
