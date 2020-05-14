@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/layout.css">
     
   
@@ -13,118 +14,164 @@
 </head>
 
 
-
-<body>
-
-    <section id="produto">
+<body>  
+    <section id="top">
         <div class="navbar-fixed nav-wrapper ">
-            <nav>
-              <div class="container">
-                  <a href="index.html"><img class="logo" src=imagens/ecoprod.png>
-                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons icon-color">menu</i></a>
-                  <ul class=" right hide-on-med-and-down">           
+            <nav>                 
+                  <a href="index.html"><img class="logo" src=imagens/ecoprod.png></a>      
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger "><i class="material-icons icon-color">menu</i></a>
+                  <ul class="hide-on-med-and-down right">           
                       <li class="waves-effect waves-green"><a href="produto.html">Produtos</a></li>
                       <li class="waves-effect waves-green"><a href="#">Local</a></li>
                       <li class="waves-effect waves-green"><a href="#">Fórum</a></li>
                       <li class="waves-effect waves-green"><a href="#">Ponto Comercial</a></li>
                       <li class="waves-effect waves-green"><a href="#">HEADS</a></li>
-                  </ul>
-              </div><!--container--> 
+                      <li><a class="dropdown-trigger waves-effect waves-green" href="#!" data-target="dropdown1">Home<i class="material-icons right">arrow_drop_down</i></a></li>
+
+                  </ul>        
             </nav>            
         </div><!--nav-wrapper-->
-                  <ul class="sidenav" id="mobile-demo">
+        <div>
+        <ul id="dropdown1" class="dropdown-content ">
+          <li><a href="#!">one</a></li>
+          <li><a href="#!">two</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">three</a></li>
+        </ul>
+</div>
+                  <ul class="sidenav center" id="mobile-demo">
                       <li><a href="produto.html">Produtos</a></li>
                       <li><a href="local.html">Local</a></li>
                       <li><a href="forum.html">Fórum</a></li>
                       <li><a href="pontocomercial.html">Ponto Comercial</a></li>
                       <li><a href="heads.html">HEADS</a></li>
-                  </ul>
-                  
-
+                  </ul>            
     </section>
 
+    <section id="page-produtos">
 
-    <section>
-        
-        <div id="banner" ><a id="freepik" href="http://www.freepik.com">Designed by Freepik</a>  
-            <div class="row">
-                <div class="col s12 m7">
-                    <div class="search-box">
+    <div id="meio">
+        <div class="row">
+            <div class="col s12 m7">
+                <div class="search-box">
 
-                        <form class="pesquisa z-depth-3">    
-                            <input  type="search" id="texto" placeholder="Procure seu produto aqui">
-                            <a class="waves-effect waves-light  btn "><i class="material-icons">search</i></a>
-                        </form>
-                </div><!--col-->
-                                              
-                        <form >
-                            <div class="filtro container">
-                                <input type="checkbox" class="filled-in" checked><span class="por-produto">Por Produto</span>
-                                <input type="checkbox" class="filled-in" ><span class="por-local">Por Local</span>
-                                <input type="checkbox" class="filled-in"  ><span class="por-categoria">Por Categoria</span>
-                            </div>
-                        </form>                    
-                    </div><!--search-box-->         
-            </div><!--row-->
-    </section>
+                    <form class="pesquisa z-depth-3">    
+                        <input  type="search" id="texto" placeholder="Procure seu produto aqui">
+                        <a class="waves-effect waves-light  btn "><i class="material-icons">search</i></a>
+                    </form>
+            </div><!--col-->
+                                          
+                    <form >
+                        <div class="filtro container">
+                            <input type="checkbox" class="filled-in" checked><span class="por-produto">Por Produto</span>
+                            <input type="checkbox" class="filled-in" ><span class="por-local">Por Local</span>
+                            <input type="checkbox" class="filled-in"  ><span class="por-categoria">Por Categoria</span>
+                        </div>
+                    </form>                    
+                </div><!--search-box-->         
+        </div><!--row-->
+
+    
 
 
 
 <!--fotos-Produtos-->
 
-        <section class="container foto-produtos ">
-            <div class="container">
+
+        <div class="container foto-produtos">
+            <div>
                 <div class="row">
                     <div class="col s6">
                         <img src="imagens/brocolis.jpg" alt="" class="pics"> <!-- notice the "circle" class -->
                     </div>
                     <div class="col s6">
                         <p class="alimentos">Brocolis</p>
+                        <p class="alimentos">Descrição Breve</p>
+                        <p class="alimentos">Vendedor (Ponto Comercial)</p>
                         <p class="alimentos">Preço</p>
                         <a class="waves-effect waves-light btn botao">Comprar</a>
-                        <a class="waves-effect waves-light btn botao">Carrinho</a>
-                    <div>                        
+                        <a class="waves-effect waves-light btn botao"><i class="material-icons">add_shopping_cart</i></a>
+                    </div>                        
                 </div>        
             </div>
-        </section>
+        </div>
 
-
-        <section class="container foto-produtos">
-            <div class="container caixas">
+        <div class="container foto-produtos">
+            <div>
                 <div class="row">
                     <div class="col s6">
                         <img src="imagens/repolho.jpg" alt="" class="pics"> <!-- notice the "circle" class -->
                     </div>
                     <div class="col s6">
                         <p class="alimentos">Repolho</p>
+                        <p class="alimentos">Descrição Breve</p>
+                        <p class="alimentos">Vendedor (Ponto Comercial)</p>
                         <p class="alimentos">Preço</p>
                         <a class="waves-effect waves-light btn botao">Comprar</a>
-                        <a class="waves-effect waves-light btn botao">Carrinho</a>
-                    <div>
-                                
+                        <a class="waves-effect waves-light btn botao"><i class="material-icons">add_shopping_cart</i></a>
+                    </div>                                
                 </div>        
             </div>
-        </section>
+        </div>
 
-        <section class="container foto-produtos">
-            <div class="container caixas">
+
+        <div class="container foto-produtos">
+            <div>
                 <div class="row">
                     <div class="col s6">
                         <img src="imagens/alface.jpg" alt="" class="pics"> <!-- notice the "circle" class -->
                     </div>
                     <div class="col s6">
                         <p class="alimentos">Alface</p>
+                        <p class="alimentos">Descrição Breve</p>
+                        <p class="alimentos">Vendedor (Ponto Comercial)</p>
                         <p class="alimentos">Preço</p>
                         <a class="waves-effect waves-light btn botao">Comprar</a>
-                        <a class="waves-effect waves-light btn botao">Carrinho</a>
-                    <div>                        
+                        <a class="waves-effect waves-light btn botao"><i class="material-icons">add_shopping_cart</i></a>
+                    </div>                        
                 </div>        
             </div>
+        </div>
+
+            
+    </div>
+
+
+
+
         </section>
 
 
 
 
+
+<!--FOOTER-->
+<footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6 l6">
+          <header><h5>Saiba Mais</h5></header>
+          <div class="input-field col s12 m12">
+            <input type="text" id="email" placeholder="E-mail" class="validate">
+          </div> <!-- /.input-field -->
+        </div> <!-- /.col -->
+        <div id="social" class="col s12 m4 l4 offset-l2">
+          <header><h5>Nossas Redes</h5></header>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>  <!-- /.col -->
+      </div>	<!-- /.row -->
+    </div>	<!-- /container -->
+    <div class="footer-copyright">
+      <div class="container"> Projeto para Faculdade Imaculada do Recife 2020
+    
+        <a href="#" class="right"><img id="logo-heads" src="imagens/logo-heads.PNG" alt=""></a>
+      </div>	<!-- /.container -->
+    </div>	<!-- /.footer-copyright-->
+  </footer> <!-- /footer -->
+  
 
 
 
