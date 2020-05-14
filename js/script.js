@@ -24,3 +24,16 @@ document.addEventListener('DOMContentLoaded', function() {
     $('.modal').modal();
   });
           
+
+
+
+
+  // BOTAO DROPDOWN HOME
+
+
+  $('.dropdown-trigger').dropdown();
+
+  const elemsDropdown = document.querySelectorAll(".dropdown-trigger");
+  const instancesDropdown = M.Dropdown.init(elemsDropdown, {
+    coverTrigger:false
+  });
