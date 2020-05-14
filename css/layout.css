@@ -32,6 +32,10 @@ nav li{
     font-size: 50px;
 }
 
+section#top nav ul li:nth-child(6){
+	border-left:1px solid rgb(51,121,10);
+}
+
 .sidenav{
     background-color: rgb(20, 66, 8);
     padding-top:100px;
@@ -84,7 +88,7 @@ h2{
 }
 
 #conteudo{
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 
