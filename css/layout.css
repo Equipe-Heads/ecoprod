@@ -5,7 +5,7 @@ body{
 }
 .logo{
 	height:65px;
-    width:15%;
+    width:17%;
     margin-left:20px;   
 }
 
@@ -76,8 +76,9 @@ h2{
 }
 
 #freepik{
-    margin-left:1300px;
-    color:rgb(182, 171, 141);
+    margin-left:70%;
+    
+    color:rgb(199, 191, 171);
     
    
 }
