@@ -22,8 +22,9 @@ ul li a{
     
 }
 
+
 section#top nav{
-    background-color:rgb(212, 207, 191);
+    background-color:rgb(221, 209, 188);
     height:4.8em;
     padding-right: 10px;
 }
@@ -237,6 +238,7 @@ section#page-produtos{
     height:30%;
     padding-left:1%;
     background-color: white;
+    
 }
 
 #texto{
