@@ -8,9 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/layout.css">
     
-  
-
-    <title>Document</title>
+      <title>Projeto Ecoprod</title>
 </head>
 
 
@@ -26,7 +24,7 @@
                       <li class="waves-effect waves-green"><a href="#">Fórum</a></li>
                       <li class="waves-effect waves-green"><a href="#">Ponto Comercial</a></li>
                       <li class="waves-effect waves-green"><a href="#">HEADS</a></li>
-                      <li><a class="dropdown-trigger waves-effect waves-green" href="#!" data-target="dropdown1">Home<i class="material-icons right">arrow_drop_down</i></a></li>
+                      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Home<i class="material-icons right">arrow_drop_down</i></a></li>
 
                   </ul>        
             </nav>            
@@ -50,28 +48,57 @@
 
     <section id="page-produtos">
 
-    <div id="meio">
-        <div class="row">
-            <div class="col s12 m7">
-                <div class="search-box">
+        
 
-                    <form class="pesquisa z-depth-3">    
-                        <input  type="search" id="texto" placeholder="Procure seu produto aqui">
-                        <a class="waves-effect waves-light  btn "><i class="material-icons">search</i></a>
-                    </form>
-            </div><!--col-->
-                                          
-                    <form >
-                        <div class="filtro container">
-                            <input type="checkbox" class="filled-in" checked><span class="por-produto">Por Produto</span>
-                            <input type="checkbox" class="filled-in" ><span class="por-local">Por Local</span>
-                            <input type="checkbox" class="filled-in"  ><span class="por-categoria">Por Categoria</span>
-                        </div>
-                    </form>                    
-                </div><!--search-box-->         
-        </div><!--row-->
+   <!--Botao de Busca-->     
 
-    
+        <div id="meio">
+            <div class="container">
+            <div class="row">
+
+
+
+                <div class="col s12 l6">
+                    <div id="box center">                        
+                        <div class="search-box">
+                            <form class="pesquisa z-depth-3">                          
+                                <input  type="search" id="texto" placeholder="Procure seu produto aqui">
+                                <a id="search-botao" class="waves-effect waves-light  btn "><i class="material-icons">search</i></a>
+                            </form>
+                        </div><!--search-box-->
+                    </div>
+                </div>
+                
+                <div class="col s12 l6">
+                    <div class="flex-container">
+                        <form action="#">
+                            <p>
+                            <label>
+                                <input type="radio" class="with-gap" name="group1"   />
+                                <span id="filter">Produto</span>
+                            </label>
+                            </p>
+                            <p>
+                                <label>
+                                <input type="radio" class="with-gap" name="group1"   />
+                                <span id="filter">Local</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                <input type="radio" class="with-gap" name="group1" />
+                                <span id="filter">Categoria</span>
+                                </label>
+                            </p>
+                        </form>
+                </div><!--col-->
+            </div><!--row-->
+        </div><!--container-->
+    </div><!--meio-->
+
+
+  
+
 
 
 
@@ -81,14 +108,14 @@
         <div class="container foto-produtos">
             <div>
                 <div class="row">
-                    <div class="col s6">
+                    <div class="col s12 l6 ">
                         <img src="imagens/brocolis.jpg" alt="" class="pics"> <!-- notice the "circle" class -->
                     </div>
-                    <div class="col s6">
+                    <div class="col s12 l6">
                         <p class="alimentos">Brocolis</p>
                         <p class="alimentos">Descrição Breve</p>
                         <p class="alimentos">Vendedor (Ponto Comercial)</p>
-                        <p class="alimentos">Preço</p>
+                        <p class="alimentos">R$</p>
                         <a class="waves-effect waves-light btn botao">Comprar</a>
                         <a class="waves-effect waves-light btn botao"><i class="material-icons">add_shopping_cart</i></a>
                     </div>                        
@@ -99,14 +126,14 @@
         <div class="container foto-produtos">
             <div>
                 <div class="row">
-                    <div class="col s6">
+                    <div class="col s12 l6">
                         <img src="imagens/repolho.jpg" alt="" class="pics"> <!-- notice the "circle" class -->
                     </div>
-                    <div class="col s6">
+                    <div class="col s12 l6">
                         <p class="alimentos">Repolho</p>
                         <p class="alimentos">Descrição Breve</p>
                         <p class="alimentos">Vendedor (Ponto Comercial)</p>
-                        <p class="alimentos">Preço</p>
+                        <p class="alimentos">R$</p>
                         <a class="waves-effect waves-light btn botao">Comprar</a>
                         <a class="waves-effect waves-light btn botao"><i class="material-icons">add_shopping_cart</i></a>
                     </div>                                
@@ -118,26 +145,22 @@
         <div class="container foto-produtos">
             <div>
                 <div class="row">
-                    <div class="col s6">
+                    <div class="col s12 l6">
                         <img src="imagens/alface.jpg" alt="" class="pics"> <!-- notice the "circle" class -->
                     </div>
-                    <div class="col s6">
+                    <div class="col S12 L6">
                         <p class="alimentos">Alface</p>
                         <p class="alimentos">Descrição Breve</p>
                         <p class="alimentos">Vendedor (Ponto Comercial)</p>
-                        <p class="alimentos">Preço</p>
+                        <p class="alimentos">R$</p>
                         <a class="waves-effect waves-light btn botao">Comprar</a>
                         <a class="waves-effect waves-light btn botao"><i class="material-icons">add_shopping_cart</i></a>
-                    </div>                        
-                </div>        
+                    </div><!--col-->                        
+                </div><!--row-->        
             </div>
-        </div>
-
-            
+        </div><!--foto-produtos-->            
     </div>
-
-
-
+</div>
 
         </section>
 
