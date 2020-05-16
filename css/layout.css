@@ -4,9 +4,10 @@ body{
     
 }
 .logo{
-	height:70px;
+	height:68px;
     width:17%;
-    margin-left:220px;   
+    margin-left:20px;
+    margin-right:220px;   
 }
 
 
@@ -19,6 +20,7 @@ ul li a{
 
 .icon-color{
     color:grey;
+    margin-top:10px;
     
 }
 
