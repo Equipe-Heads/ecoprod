@@ -234,6 +234,7 @@ section#page-produtos{
 
 .search-box{
     margin-top:25%;
+    margin-left:5%;
 
 }
 
@@ -252,7 +253,7 @@ section#page-produtos{
     height: 35px;
     float: left;
     font-family: Arial;
-    font-size: 20px;
+    font-size: 16px;
     border:none;
     
 }
@@ -264,9 +265,7 @@ section#page-produtos{
     width: 50%;
     height: 45px;
     background-color: green;    
-    cursor: pointer;
-   
-
+    cursor: pointer; 
    
 }
 
@@ -326,3 +325,37 @@ section#page-produtos{
 
 
 
+/* Page Produto Comercial */
+
+
+section#ponto-comercial{
+    background-image: url("../imagens/wood.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 4%;
+    padding-bottom: 4%;
+
+
+}
+
+
+
+#botao-produto-comercial{
+    margin-top:12%;
+    justify-content: center;
+    margin-left:4
+    %;
+    
+}
+
+#btn-space{
+    margin-left: 20px;
+
+}
+
+
+.store-pic{
+    font-size: 180px;
+    margin-top:5%;
+    
+}
