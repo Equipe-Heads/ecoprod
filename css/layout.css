@@ -219,7 +219,7 @@ section#page-produtos{
 .alimentos{
     font-size: 22px;
     font-weight: bold;
-    margin-top:5%;
+    margin-top:8%;
     color: indigo;
 
 }
@@ -288,13 +288,8 @@ section#page-produtos{
     display: flex;
     justify-content: center;
     margin-top:15%;
-    
-   
 
 }
-
-
-
 
 #filter{
     font-size:20px;
@@ -323,6 +318,34 @@ section#page-produtos{
 }
 
 
+/* Page produto-escolhido*/
+
+
+
+section#produto-escolhido{
+    background-image: url("../imagens/wood.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 4%;
+    padding-bottom: 4%;
+
+
+}
+
+.icon-left{
+    margin-top:8%;
+    font-size:80px;
+    color:#233720;
+
+}
+
+.perfil-escolhido{
+    margin-bottom: 80px;
+    margin-top:10%;
+    padding:10px;
+
+}
+
 
 
 /* Page Produto Comercial */
@@ -334,8 +357,6 @@ section#ponto-comercial{
     background-size: cover;
     padding-top: 4%;
     padding-bottom: 4%;
-
-
 }
 
 
@@ -343,8 +364,6 @@ section#ponto-comercial{
 #botao-produto-comercial{
     margin-top:12%;
     justify-content: center;
-    margin-left:4
-    %;
     
 }
 
@@ -359,3 +378,14 @@ section#ponto-comercial{
     margin-top:5%;
     
 }
+
+
+/*Page Perfil Ponto Comercial */
+
+
+h3{
+    
+    color:#233720;
+
+}
+
