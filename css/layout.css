@@ -120,7 +120,6 @@ h2{
 
 /*FOOTER*/
 
-
 #email{
     width:300px;
     height: 35px;    
@@ -232,32 +231,34 @@ section#page-produtos{
 }
 
 
-.search-box{
+#box-search{
+       
+    width: 90%;
     margin-top:25%;
-    margin-left:5%;
-
-}
-
-.pesquisa{  
-    margin-top:0px;
-    border:solid 1px green;
-    width: 95%;
-    height:30%;
-    padding-left:1%;
-    background-color: white;
+    margin-left:10%;
     
 }
 
+
 #texto{
-    width:85%;
+    width:80%;
     height: 35px;
     float: left;
     font-family: Arial;
     font-size: 16px;
-    border:none;
+    border:1px solid #748d58;
+    margin-left:15px;
+    padding-left:4px;
+    
     
 }
 
+
+#botao-pesquisar{
+    margin:0;
+    padding:0;
+    
+}
 
 
 #botao{
@@ -275,10 +276,6 @@ section#page-produtos{
     
 }
 
-#search-botao{
-    width: 15%;
-    
-}
 .btn:hover{
     background-color: rgb(77, 180, 17);
 }
@@ -303,6 +300,7 @@ section#page-produtos{
 
 
 
+
 /*Botao Radio*/
 
 [type="radio"].with-gap:checked +span:before {
@@ -316,6 +314,9 @@ section#page-produtos{
     border:1px solid rgb(13, 114, 9);
     background-color: rgb(10, 150, 10);
 }
+
+
+
 
 
 /* Page produto-escolhido*/
@@ -348,7 +349,10 @@ section#produto-escolhido{
 
 
 
-/* Page Produto Comercial */
+
+
+
+/* Page Ponto Comercial */
 
 
 section#ponto-comercial{
@@ -358,7 +362,6 @@ section#ponto-comercial{
     padding-top: 4%;
     padding-bottom: 4%;
 }
-
 
 
 #botao-produto-comercial{
@@ -378,6 +381,10 @@ section#ponto-comercial{
     margin-top:5%;
     
 }
+
+
+
+
 
 
 /*Page Perfil Ponto Comercial */
