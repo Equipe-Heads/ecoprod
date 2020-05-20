@@ -195,7 +195,7 @@ div#social ul li:nth-child(2) a:hover {background-position: -128px -32px;}
 /*Page do produto.html */
 
 section#page-produtos{
-    background-image: url("../imagens/wood.jpg");
+    background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 4%;
@@ -205,10 +205,15 @@ section#page-produtos{
 }
 
 #meio{
-    background-color: white;
+    background-image: url("../imagens/folhas.jpg");
     margin-left:8%;
     margin-right:8%;
     padding-bottom:5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height:100%;
+
     
 }
 
@@ -334,9 +339,7 @@ section#page-produtos{
 
 
 section#produto-escolhido{
-    background-image: url("../imagens/wood.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: white;
     padding-top: 4%;
     padding-bottom: 4%;
 
@@ -344,7 +347,7 @@ section#produto-escolhido{
 }
 
 .icon-left{
-    margin-top:8%;
+    margin-top:20%;
     font-size:80px;
     color:#233720;
 
@@ -358,7 +361,18 @@ section#produto-escolhido{
 }
 
 
+/*page ponto comercial escolhido */
+section#ponto-comercial-escolhido{
 
+    background-color:white;
+    padding-top: 4%;
+    padding-bottom: 4%;
+
+}
+
+#meio h3{
+    margin-top:10%;
+}
 
 
 
@@ -366,7 +380,7 @@ section#produto-escolhido{
 
 
 section#ponto-comercial{
-    background-image: url("../imagens/wood.jpg");
+    background-color:white;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 4%;
