@@ -26,7 +26,7 @@ ul li a{
 
 
 section#top nav{
-    background-color:rgb(221, 209, 188);
+    background-color:#D7F39E;
     height:4.8em;
 
 }
@@ -61,22 +61,29 @@ section#top nav ul li:nth-child(6){
 }
 
 
-#info{
-    margin-left: 10%;
-    margin-top: 2%;
-    text-align: left;
-    display:flex;   
+#new-banner{
+ background-image: url("../imagens/fundo-verde.jpg");
+ background-repeat: no-repeat;
+ height: 400px;
 
 }
+
+#info h2{
+     margin-top:10%;
+}
+
 
 #info p{
     color:#4a3a3a;
     font-size: 1.5em;
-    text-align: justify;
-    padding-right:20%;
-    margin-top:2em;
+    margin-left:10%;
+    margin-right:10%;
     
+   
+   
     }
+
+    
 
 h2{
     font-family: 'Righteous', cursive;
@@ -89,38 +96,51 @@ h2{
     height:250px;
 }
 
+/*
 #freepik{
     margin-left:70%;
     
-    color:rgb(199, 191, 171);
-    
-   
+    color:rgb(199, 191, 171);   
+}*/
+
+#info-organicos{
+ padding-bottom:130px;
 }
+
 
 #conteudo{
     margin-bottom: 80px;
 }
 
-.info-organicos p{
+#conteudo p{
     font-size: 16px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: auto;
+    margin:0;
+    margin-bottom:50px;
 }
 
-
+#conteudo.container{
+    margin-left:15%;
+    margin-right:15%;
+}
 
 .card-content h6{
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color:rgb(42, 116, 8);   
-    
+    color:rgb(42, 116, 8);
+    font-size:14px;
 
 }
 
-.card-content p{
+
+#textinho p{
     font-size: 12px;
     text-align:auto;
 }
+
+
+
 
 
 
@@ -186,11 +206,6 @@ div#social ul li:nth-child(2) a:hover {background-position: -128px -32px;}
     margin-top: 7px;
     
 }
-
-
-
-
-
 
 /*Page do produto.html */
 
