@@ -16,17 +16,20 @@
     <section id="top">
         <div class="navbar-fixed nav-wrapper ">
             <nav>                 
-                  <a href="index.html"><img class="logo left" src=imagens/ecoprod.png></a>      
-                  <a href="#" data-target="mobile-demo" class="sidenav-trigger "><i class="material-icons icon-color">menu</i></a>
-                  <ul class="hide-on-med-and-down right">           
-                      <li class="waves-effect waves-green"><a href="produto.html">Produtos</a></li>
-                      <li class="waves-effect waves-green"><a href="#">Local</a></li>
-                      <li class="waves-effect waves-green"><a href="#">Fórum</a></li>
-                      <li class="waves-effect waves-green"><a href="pontocomercial.html">Ponto Comercial</a></li>
-                      <li class="waves-effect waves-green"><a href="#">HEADS</a></li>
-                      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Home<i class="material-icons right">arrow_drop_down</i></a></li>
-
-                  </ul>        
+                <div class="col s8 m3 ">
+                    <a href="index.html"><img class="logo left" src=imagens/ecoprod.png></a>      
+                </div><!--col-->
+                  <div class="col s3 m7 right ">
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger "><i class="material-icons icon-color right">menu</i></a>
+                    <ul class="hide-on-med-and-down right">           
+                        <li class="waves-effect waves-green"><a href="produto.html">Produtos</a></li>
+                        <li class="waves-effect waves-green"><a href="#">Local</a></li>
+                        <li class="waves-effect waves-green"><a href="#">Fórum</a></li>
+                        <li class="waves-effect waves-green"><a href="pontocomercial.html">Ponto Comercial</a></li>
+                        <li class="waves-effect waves-green"><a href="#">HEADS</a></li>
+                        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Home<i class="material-icons right">arrow_drop_down</i></a></li>
+                    </ul>        
+                  </div><!--col-->
             </nav>            
         </div><!--nav-wrapper-->
         <div>
@@ -64,8 +67,8 @@
                             </div><!--col-->                        
                         </div><!--col-->
                         <div id="botao-produto-comercial" class="col s12 l6 center">
-                            <a  class="waves-effect waves-light btn botao">Cadastre-se</a>
-                            <a id="btn-space" class="waves-effect waves-light btn botao">Entrar </a>
+                            <a href="#modal1" class="waves-effect waves-light btn botao modal-trigger">Cadastre-se</a>
+                            <a href="#login" id="btn-space" class="waves-effect waves-light btn botao modal-trigger ">Entrar </a>
                         </div><!--col-->
                     </div><!--row-->
                 </div><!--container-->
@@ -81,7 +84,7 @@
                             <p class="alimentos">Descrição Breve</p>
                             <p class="alimentos">Vendedor (Ponto Comercial)</p>       
                             <div class="right">       
-                            <a href="perfilpontocomercial.html" class="waves-effect waves-light btn botao">Acessar Perfil</a>
+                            <a href="pontocomercialescolhido.html" class="waves-effect waves-light btn botao">Acessar Perfil</a>
                             </div>
                             
                         </div><!--col-->                        
@@ -100,7 +103,7 @@
                             <p class="alimentos">Descrição Breve</p>
                             <p class="alimentos">Vendedor (Ponto Comercial)</p>      
                             <div class="right">       
-                                <a href="perfilpontocomercial.html" class="waves-effect waves-light btn botao">Acessar Perfil</a>
+                                <a href="pontocomercialescolhido.html" class="waves-effect waves-light btn botao">Acessar Perfil</a>
                             </div>                    
                         </div><!--col-->                        
                     </div><!--row-->        
@@ -118,7 +121,7 @@
                             <p class="alimentos">Descrição Breve</p>
                             <p class="alimentos">Vendedor (Ponto Comercial)</p>                      
                             <div class="right">       
-                                <a href="perfilpontocomercial.html" class="waves-effect waves-light btn botao">Acessar Perfil</a>
+                                <a href="pontocomercialescolhido.html" class="waves-effect waves-light btn botao">Acessar Perfil</a>
                             </div>
     
                         </div><!--col-->                        
@@ -154,7 +157,122 @@
       </div>	<!-- /.container -->
     </div>	<!-- /.footer-copyright-->
   </footer> <!-- /footer -->
+
   
+
+<!--FORMULARIO ENTRAR-->
+<div class="modal center" id="login">
+    <h5 class="modal-close">&#10005;</h5>
+
+    <div class="modal-content center">
+        <h4>Login / Entrar</h4><br>
+        <form action="">
+
+            <div class="input-field">
+                <i class="material-icons prefix ic-color">email</i>
+                <input type="email" id="usuario">
+                <label for="usuario">E-mail</label>
+            </div><br>
+
+            <div class="input-field">
+                <i class="material-icons prefix ic-color">lock</i>
+                <input type="password" id="password">
+                <label for="password">Password</label>
+            </div><br>
+
+            <div id="check-box" class="input-field">
+                <label>
+                    <input type="checkbox" class="filled-in" />
+                    <span>Lembrar meu usuario</span>
+                </label><br>
+            </div>
+
+            <a id="entrar" class="waves-effect waves-light btn ">Entrar </a>
+
+        </form>
+    </div>
+</div>
+
+
+
+<!--FORMULARIO CADASTRO-->
+
+<div class="container">
+    <div class="modal" id="modal1">
+        <h5 class="modal-close">&#10005;</h5>
+
+        <div class="modal-content">
+            <h4 class="center">Formulário de Cadastro</h4>
+            <form action="">
+                <div class="row">
+                    <div class="input-field inline col s12 ">
+                        <label for="nome">Nome Completo * </label>
+                        <input type="text" id="nome">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field inline col s6">
+                        <label for="pontoComercial">Nome do Ponto Comercial * </label>
+                        <input type="text" id="pontoComercial">
+                    </div>
+                    <div class="input-field inline col s6">
+                        <label for="endereco">Endereço * </label>
+                        <input type="text" id="endereco">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field  col s6">
+                        <input id="icon_telephone" type="tel" class="validate">
+                        <label for="icon_telephone">Telefone * </label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="icon_cpf" type="text" class="validate">
+                        <label for="icon_cpf">CPF *</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="icon_email" type="email" class="validate">
+                        <label for="icon_email">E-mail * </label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="icon_repetirEmail" type="email" class="validate">
+                        <label for="icon_repetirEmail">Repetir Email *</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field inline col s6">
+                        <label for="senha">Senha * </label>
+                        <input type="password" id="senha">
+                    </div>
+                    <div class="input-field inline col s6">
+                        <label for="repetir-password">Repetir Senha * </label>
+                        <input type="password" id="repetir-password">
+                    </div>
+                </div>
+                <div class="col s12 center">
+                    <a id="cadastrar" class="waves-effect waves-light btn">Cadastrar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
                   
 
