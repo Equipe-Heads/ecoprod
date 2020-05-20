@@ -280,12 +280,14 @@ section#page-produtos{
 
 
 .btn{
-    background-color: #7e9760 ;
+    background-color: #2e4e06 ;
+    
     
 }
 
 .btn:hover{
     background-color: rgb(77, 180, 17);
+    transition: 400ms;
 }
 
 .flex-container{
@@ -453,6 +455,30 @@ h3{
 }
 
 
+  .input-field label{
+    color: rgb(71, 37, 5);
+  }
+
+  .input-field .prefix.active {
+    color: rgb(173, 113, 33);
+  }
+
+[type="checkbox"].filled-in:checked + span:not(.lever):after {
+ 
+    top: 0;   
+    width: 20px;   
+    height: 20px;   
+    border: 2px solid #7e6737;   
+    background-color: #67da0a;   
+    z-index: 0;   
+  }
+
+
+
+
+
+
+
 
 /*AREA DE CADASTRO */
 
@@ -461,6 +487,15 @@ form label{
 
     
 }
+
+div#modal1.modal.open {
+    display: block;
+    opacity: 1;
+
+    
+
+}
+
 #cadastrar{
     background-color: rgb(88, 73, 31);
     margin-top:14px;
