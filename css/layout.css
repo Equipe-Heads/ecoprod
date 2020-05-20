@@ -280,7 +280,7 @@ section#page-produtos{
 
 
 .btn{
-    background-color: #748d58 ;
+    background-color: #7e9760 ;
     
 }
 
@@ -403,4 +403,93 @@ h3{
     color:#233720;
 
 }
+
+
+
+/*AREA DE LOGIN */
+#login{
+    width:380px;
+
+    
+}
+
+.modal-close{
+    position:absolute;
+    top:10px;
+    right:10px ;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+.ic-color, h4, .modal-close {
+    color: rgb(88, 73, 31);
+}
+
+#entrar{
+    margin-top:10%;
+    width: 330px;
+    background-color: rgb(88, 73, 31);
+}
+
+#entrar:hover{
+    background-color: rgb(173, 113, 33);
+}
+
+.modal-content{
+    width: 100%;
+    background-color: rgb(227, 250, 216);
+
+}
+
+.modal{
+    margin-top:5%;
+
+}
+
+#check-box{
+    margin-left:80px;
+}
+
+
+
+/*AREA DE CADASTRO */
+
+form label{
+    display: flex;
+
+    
+}
+#cadastrar{
+    background-color: rgb(88, 73, 31);
+    margin-top:14px;
+    width: 230px;
+}
+
+
+#cadastrar:hover{
+    background-color: rgb(173, 113, 33);
+}
+
+#modal1{
+display: flex;
+
+}
+
+#senha, #endereco, #nome, #pontoComercial, #icon_telephone,#icon_cpf, #icon_repetirEmail, #icon_email, #repetir-password{
+    margin-bottom: 1px;
+    margin-top:1px;
+
+}
+
+.input-field{
+    margin-bottom:1px;
+    margin-top:1px;
+}
+
+
+
+
+
 
