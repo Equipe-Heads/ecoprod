@@ -554,4 +554,110 @@ display: flex;
 
 
 
+/* ---- Rômulo -----*/
 
+       
+#mapid { 
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    height: 550px;
+    width: 90%;
+ }
+    
+   
+ #entrada{
+    margin-top: 55px;
+    font-size: 15px;
+    
+    }
+    #divs{
+     width: 35%;
+     margin-left: 5%;
+     float: left;
+    }
+
+    #btnAgro {
+     width: 10.7%;
+     height: 35px;
+     padding: 0;
+     display: inline-block;
+     text-align: center;
+     font-size: 10pt;
+     }
+     .popover {
+         padding: 3px;
+         font-size: 7.5pt;
+         background-color: rgb(197, 228, 184)30, 255, 80)30, 255, 80)30, 255, 80);
+         text-align: left;
+         width: 350px;
+         
+     }
+
+     .btnRom {
+        width: 100%;
+        height: 35px;
+        margin-top: 6px;
+        padding: 0;
+        text-align: center;
+        font-size: 7pt;
+        background-color: #8a8b88 ;
+     }
+
+     .btngreen {
+        background-color: #349727 ;
+        margin-top: 4px;
+        
+     }
+
+     .btnred {
+        background-color: #d80202 ;
+        margin-top: 4px;
+     }
+
+     .btnblue {
+        background-color: #0502c0 ;
+        margin-top: 4px;
+     }
+
+     .btnyellow {
+        background-color: #f6f317 ;
+        color: black;
+        margin-top: 4px;
+     }
+
+
+     #meu {
+        font-size: 10pt;
+        margin-top: 2%;
+        padding-left: 10%;
+        
+     }
+
+     .containerRomulo {
+        width: 80%;
+        margin-left: 10%;
+
+
+     }
+
+     div button{
+      
+       
+     }
+
+#botoes{
+    margin-right:20%;
+   margin-top:3%;
+         margin-bottom: 3%;
+
+}
+
+
+     #die{
+  
+     }
+
+     #submit{
+         margin-right: 10px;
+     }
