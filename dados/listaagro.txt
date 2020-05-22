@@ -1,0 +1,14 @@
+ABACAXI,Carbendazim,85,Etefom,71,Imidacloprido,52,Azoxistrobina,2,Ciromazina,2
+ALFACE,Imidacloprido,89,Difenoconazol,40,Ditiocarbamatos,40,Tiametoxam,36,Pencicurom,23
+ALHO,Azoxistrobina,3,Ciromazina,3,Propamocarbe,3,Diafentiurom,2,Fenpropatrina,2
+ARROZ,Piraclostrobina,9,Captana,2,Clotianidina,2,Fenpropatrina,2,Ometoato,1
+BATATA-DOCE,Captana,6,Ciromazina,6,Carbendazim,4,Ditiocarbamatos,4,Piraclostrobina,4
+BETERRABA,Ditiocarbamatos,87,Clorpirifós,8,Pendimetalina,7,Acefato,6,Protiofós,6
+CENOURA,Clorpirifós,88,Acefato,49,Flutriafol,10,Cadusafós,9,Profenofós,8
+CHUCHU,Acefato,11,Dimetoato,8,Carbendazim,3,Aldicarbe,2,Carbofurano,1
+GOIABA,Imidacloprido,93,Tebuconazol,39,Cipermetrina,30,Ditiocarbamatos,25,Carbendazim,19
+LARANJA,Carbofurano,26,Acefato,18,2.4D,9,Formetanato,7,Mepiquate,5
+MANGA,Ometoato,10,Glifosato,7,Acefato,3,Formetanato,2,Captana,2
+PIMENTÃO,Imidacloprido,187,Carbendazim,168,Clorfenapir,147,Acefato,136,Difenoconazol,121
+TOMATE,Fenpropatrina,86,Acefato,67,Lambda-cialotrina,43,Clorpirifós,32,Fipronil,26
+UVA,Etefom,122,Imidacloprido,60,Lambda-cialotrina,45,Etofenproxi,22,Propargito,20

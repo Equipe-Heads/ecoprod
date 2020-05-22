@@ -1,0 +1,15 @@
+Cultura,Agrotoxicos mais presentes,
+ABACAXI,Carbendazim,Etefom,Imidacloprido
+ALFACE,Imidacloprido,Difenoconazol,Ditiocarbamatos
+ALHO,Azoxistrobina,Ciromazina,Propamocarbe
+ARROZ,Piraclostrobina,Captana,Clotianidina
+BATATA-DOCE,Captana,Ciromazina,Carbendazim
+BETERRABA,Ditiocarbamatos,Clorpirifós,Pendimetalina
+CENOURA,Clorpirifós,Acefato,Flutriafol
+CHUCHU,Acefato,Dimetoato,Carbendazim
+GOIABA,Imidacloprido,Tebuconazol,Cipermetrina
+LARANJA,Carbofurano,Acefato,2.4D
+MANGA,Ometoato,Glifosato,Acefato
+PIMENTÃO,Imidacloprido,Carbendazim,Clorfenapir
+TOMATE,Fenpropatrina,Acefato,Lambda-cialotrina
+UVA,Etefom,Imidacloprido,Lambda-cialotrina
