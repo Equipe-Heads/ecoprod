@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/layout.css">
+
+    <!-- External Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+    <!-- Internal Scripts -->
+
+    <script src="js/agro.js"></script>
+    <script>
+  $(document).ready(function(){
+    $('.tooltipped').tooltip();
+  });
+    </script>
+
+
+</head>
+
+<body>
+<section id="top">
+    <div class="navbar-fixed nav-wrapper ">
+        <nav>                 
+            <div class="col s8 m3 ">
+                <a href="index.html"><img class="logo left" src=imagens/ecoprod.png></a>      
+            </div><!--col-->
+            <div class="col s3 m7 right ">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger "><i class="material-icons icon-color right">menu</i></a>
+                <ul class="hide-on-med-and-down right">           
+                    <li class="waves-effect waves-green"><a href="produto.html">Produtos</a></li>
+                    <li class="waves-effect waves-green"><a href="#">Local</a></li>
+                    <li class="waves-effect waves-green"><a href="#">Fórum</a></li>
+                    <li class="waves-effect waves-green"><a href="pontocomercial.html">Ponto Comercial</a></li>
+                    <li class="waves-effect waves-green"><a href="#">HEADS</a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Agrotóxicos<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>        
+            </div><!--col-->
+        </nav>        
+    </div><!--nav-wrapper-->
+    <div>
+        <ul id="dropdown1" class="dropdown-content ">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+        </ul>
+    </div>
+        <ul class="sidenav center" id="mobile-demo">
+            <li><a href="produto.html">Produtos</a></li>
+            <li><a href="local.html">Local</a></li>
+            <li><a href="forum.html">Fórum</a></li>
+            <li><a href="pontocomercial.html">Ponto Comercial</a></li>
+            <li><a href="heads.html">HEADS</a></li>
+        </ul>            
+</section>
+    
+    
+
+
+<section id="produto-escolhido">
+    
+<!--Botao de Busca-->     
+    <div id="meio" class="z-depth-4">
+        <div class="container">
+            <div class="titulo-grafico col s12 m9">
+                <h5 id="title" class="center"> CONTAMINAÇÃO POR AGROTÓXICOS </h5>
+            </div>
+        </div>
+    
+            
+
+<section id="conteudo">
+    <div class="containerRomulo">
+        <div class="row">
+            <div id="tabelas" class="tabelas col s12 m3">
+                <button id="pAI" type="button" onclick="start(); return;"
+                    class="waves-effect waves-light btn btnRom">Dados amostrais</button>
+                <button id="pAI" type="button" onclick="plotpAI(); return;" 
+                    class="waves-effect waves-light btn btnRom">Porcentagem de Contaminação</button>
+                <button id="MTA" type="button" onclick="plotMTA(); return;"
+                    class="waves-effect waves-light btn btnRom">Detecções por amostra</button>
+                <button id="MAI" type="button" type="submit" onclick="plotMAI(); return;"
+                    class="waves-effect waves-light btn btnRom">Detecções por amostra contaminada</button>
+                <button id="NAD" type="button" onclick="plotNAD(); return;"
+                    class="btn waves-effect waves-light btnRom">Nº de Agrotóxicos Contaminantes</button>
+                <button id="TODOS" value="2007-2014" type="button" onclick="intoxi(9, value); return;"
+                    class="waves-effect waves-light btn btnRom">Intoxicações por agrotóxicos</button>
+
+                <div id="pesquisa-ano">
+                    <p><b>Pesquisa por Ano</b></p>
+                
+                    <label>
+                        <input id="2007" value="2007" name="group1" class="input" onclick="intoxi(1, value);  return;" type="radio"
+                            style="margin-left: 7%;" /> <span id="meu">2007</span>
+                    </label>
+                    <label>
+                        <input id="2008" value="2008" name="group1" class="input" onclick="intoxi(2, value);  return;"
+                            type="radio"><span id="meu">2008</span>
+                    </label>
+                    <label>
+                        <input id="2009" value="2009" name="group1" class="input" onclick="intoxi(3, value);  return;"
+                            type="radio"><span id="meu">2009</span>
+                    </label>                
+                    <label>
+                        <input id="2010" value="2010" name="group1" class="input" onclick="intoxi(4, value);  return;"
+                            type="radio"><span id="meu">2010</span>
+                    </label><br>
+                    <label>
+                        <input id="2011" value="2011" name="group1" class="input" onclick="intoxi(5, value);  return;" type="radio"
+                            style="margin-left: 7%;"><span id="meu">2011</span>
+                    </label>
+                    <label>
+                        <input id="2012" value="2012" name="group1" class="input" onclick="intoxi(6, value);  return;"
+                            type="radio"><span id="meu">2012</span>
+                    </label>
+                    <label>
+                        <input id="2013" value="2013" name="group1" class="input" onclick="intoxi(7, value);  return;"
+                            type="radio"><span id="meu">2013</span>
+                    </label>                
+                    <label>
+                        <input id="2014" value="2014" name="group1" class="input" onclick="intoxi(8, value);  return;"
+                            type="radio"><span id="meu">2014</span>
+                    </label>
+                    <br>
+                    <label>
+                        <input id="TODOS" value="2007-2014" name="group1" class="input" onclick="intoxi(9, value);  return;"
+                            type="radio" style="margin-left: 0%;"><span id="meu">2007-2014</span>
+                    </label>
+                
+                </div><!--pesquisa-ano-->
+
+            
+                <div id="pesquisa-uf">
+                    <p><b>Pesquisa por UF</b></p>
+
+                    <label>
+                        <input id="AC" value="AC" name="group1" class="input" onclick="plotAno(0, value);  return;"
+                            type="radio" /> <span id="meu">AC</span>
+                    </label>
+                    <label>
+                        <input id="AL" value="AL" name="group1" class="input" onclick="plotAno(1, value);  return;"
+                            type="radio"> <span id="meu">AL</span>
+                    </label>
+                    <label>
+                        <input id="AM" value="AM" name="group1" class="input" onclick="plotAno(2, value);  return;"
+                            type="radio"> <span id="meu">AM</span>
+                    </label>
+                    <label>
+                        <input id="AP" value="AP" name="group1" class="input" onclick="plotAno(3, value);  return;"
+                            type="radio"> <span id="meu">AP</span><br>
+                    </label>
+                    <label>
+                        <input id="BA" value="BA" name="group1" class="input" onclick="plotAno(4, value);  return;"
+                            type="radio"> <span id="meu">BA</span>
+                    </label>
+                    <label>
+                        <input id="CE" value="CE" name="group1" class="input" onclick="plotAno(5, value);  return;"
+                            type="radio"> <span id="meu">CE</span>
+                    </label>
+                    <label>
+                        <input id="DF" value="DF" name="group1" class="input" onclick="plotAno(6, value);  return;"
+                            type="radio"> <span id="meu">DF</span>
+                    </label>
+                    <label>
+                        <input id="ES" value="ES" name="group1" class="input" onclick="plotAno(7, value);  return;"
+                            type="radio"> <span id="meu">ES</span><br>
+                    </label>
+                    <label>
+                        <input id="GO" value="GO" name="group1" class="input" onclick="plotAno(8, value);  return;"
+                            type="radio"> <span id="meu">GO</span>
+                    </label>
+                    <label>
+                        <input id="MA" value="MA" name="group1" class="input" onclick="plotAno(9, value);  return;"
+                            type="radio"> <span id="meu">MA</span>
+                    </label>
+                    <label>
+                        <input id="MG" value="MG" name="group1" class="input" onclick="plotAno(10, value);  return;"
+                            type="radio"> <span id="meu">MG</span>
+                    </label>
+                    <label>
+                        <input id="MS" value="MS" name="group1" class="input" onclick="plotAno(11, value);  return;"
+                            type="radio"> <span id="meu">MS</span><br>
+                    </label>
+                    <label>
+                        <input id="MT" value="MT" name="group1" class="input" onclick="plotAno(12, value);  return;"
+                            type="radio"> <span id="meu">MT</span>
+                    </label>
+                    <label>
+                        <input id="PA" value="PA" name="group1" class="input" onclick="plotAno(13, value);  return;"
+                            type="radio"> <span id="meu">PA</span>
+                    </label>
+                    <label>
+                        <input id="PB" value="PB" name="group1" class="input" onclick="plotAno(14, value);  return;"
+                            type="radio"><span id="meu">PB</span>
+                    </label>
+                    <label>
+                        <input id="PE" value="PE" name="group1" class="input" onclick="plotAno(15, value);  return;"
+                            type="radio"><span id="meu">PE</span><br>
+                    </label>
+                    <label>
+                        <input id="PI" value="PI" name="group1" class="input" onclick="plotAno(16, value);  return;"
+                            type="radio"> <span id="meu">PI</span>
+                    </label>
+                    <label>
+                        <input id="PR" value="PR" name="group1" class="input" onclick="plotAno(17, value);  return;"
+                            type="radio"> <span id="meu">PR</span>
+                    </label>
+                    <label>
+                        <input id="RJ" value="RJ" name="group1" class="input" onclick="plotAno(18, value);  return;"
+                            type="radio"> <span id="meu">RJ</span>
+                    </label>
+                    <label>
+                        <input id="RN" value="RN" name="group1" class="input" onclick="plotAno(19, value);  return;"
+                            type="radio"> <span id="meu">RN</span><br>
+                    </label>
+                    <label>
+                        <input id="RO" value="RO" name="group1" class="input" onclick="plotAno(20, value);  return;"
+                            type="radio"> <span id="meu">RO</span>
+                    </label>
+                    <label>
+                        <input id="RR" value="RR" name="group1" class="input" onclick="plotAno(21, value);  return;"
+                            type="radio"> <span id="meu">RR</span>
+                    </label>
+                    <label>
+                        <input id="RS" value="RS" name="group1" class="input" onclick="plotAno(22, value);  return;"
+                            type="radio"> <span id="meu">RS</span>
+                    </label>
+                    <label>
+                        <input id="SC" value="SC" name="group1" class="input" onclick="plotAno(23, value);  return;"
+                            type="radio"> <span id="meu">SC</span><br>
+                    </label>
+                    <label>
+                        <input id="SE" value="SE" name="group1" class="input" onclick="plotAno(24, value);  return;"
+                            type="radio"> <span id="meu">SE</span>
+                    </label>
+                    <label>
+                        <input id="SP" value="SP" name="group1" class="input" onclick="plotAno(25, value);  return;"
+                            type="radio"><span id="meu">SP</span>
+                    </label>
+                    <label>
+                        <input id="TO" value="TO" name="group1" class="input" onclick="plotAno(26, value);  return;"
+                            type="radio"> <span id="meu">TO</span>
+                    </label>
+                    <label>
+                        <input id="BR" value="BR" name="group1" class="input" onclick="plotAno(27, value);  return;"
+                            type="radio"> <span id="meu">BR</span>
+                    </label>
+                </div><!--pesquisa-uf-->
+            </div><!--tabelas-->
+                   
+                        
+            <div class="nome-titulo col s12 m9">
+                <div class="chart-container">
+                    <canvas id="grafico" width="400px" height="200px"></canvas> <br>
+                <div>
+                <div id="divs" class="alert alert-dark" role="alert">
+                    <p class="center"><b>Agrotóxicos mais frequentes</b></p>
+                    <label>
+                        <input id="ABACAXI" value="ABACAXI" name="group1" class="input"
+                            onclick="freqAgro(0, value);  return;" type="radio"> <span id="meu">ABACAXI</span>
+                    </label><br>
+                    <label>
+                        <input id="ALFACE" value="ALFACE" name="group1" class="input" onclick="freqAgro(1, value);  return;"
+                            type="radio"><span id="meu">ALFACE</span>
+                    </label><br>
+                    <label>
+                        <input id="ALHO" value="ALHO" name="group1" class="input" onclick="freqAgro(2, value);  return;"
+                            type="radio"><span id="meu">ALHO</span>
+                    </label><br>
+                    <label>
+                        <input id="ARROZ" value="ARROZ" name="group1" class="input" onclick="freqAgro(3, value);  return;"
+                            type="radio"><span id="meu">ARROZ</span>
+                    </label><br>
+                    <label>
+                        <input id="BATATA-DOCE" value="BATATA-DOCE" name="group1" class="input"
+                            onclick="freqAgro(4, value);  return;" type="radio"><span id="meu">BATATA-DOCE</span>
+                    </label><br>
+                    <label>
+                        <input id="BETERRABA" value="BETERRABA" name="group1" class="input"
+                            onclick="freqAgro(5, value);  return;" type="radio"><span id="meu">BETERRABA</span>
+                    </label><br>
+                    <label>
+                        <input id="CENOURA" value="CENOURA" name="group1" class="input"
+                            onclick="freqAgro(6, value);  return;" type="radio"><span id="meu">CENOURA</span>
+                    </label><br>
+                    <label>
+                        <input id="CHUCHU" value="CHUCHU" name="group1" class="input" onclick="freqAgro(7, value);  return;"
+                            type="radio"><span id="meu">CHUCHU</span>
+                    </label><br>
+                    <label>
+                        <input id="GOIABA" value="GOIABA" name="group1" class="input" onclick="freqAgro(8, value);  return;"
+                            type="radio"><span id="meu">GOIABA</span>
+                    </label><br>
+                    <label>
+                        <input id="LARANJA" value="LARANJA" name="group1" class="input"
+                            onclick="freqAgro(9, value);  return;" type="radio"><span id="meu">LARANJA</span>
+                    </label><br>
+                    <label>
+                        <input id="MANGA" value="MANGA" name="group1" class="input" onclick="freqAgro(6, value);  return;"
+                            type="radio"><span id="meu">MANGA</span>
+                    </label><br>
+                    <label>
+                        <input id="PIMENTÃO" value="PIMENTÃO" name="group1" class="input"
+                            onclick="freqAgro(7, value);  return;" type="radio"><span id="meu">PIMENTÃO</span>
+                    </label><br>
+                    <label>
+                        <input id="TOMATE" value="TOMATE" name="group1" class="input" onclick="freqAgro(8, value);  return;"
+                            type="radio"><span id="meu">TOMATE</span>
+                    </label><br>
+                    <label>
+                        <input id="UVA" value="UVA" name="group1" class="input" onclick="freqAgro(9, value);  return;"
+                            type="radio"><span id="meu">UVA</span>
+                    </label><br>
+               
+                </div><!--divs-->
+
+                <div id="circle" class="alert alert-dark" role="alert">
+                    <canvas id="agro" width="100%" height="90%"></canvas>
+                </div>
+
+
+
+            </div><!--nome-titulo-->            
+        </div><!--row-->
+    </div><!--containerRomulo-->
+            
+           
+            
+    <div id="listas" class="row">
+        <div  class="twelve columns listas">
+
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnred" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Ácido ariloxialcanóico; <br> <b>Classe Toxicológica:</b> Classe I (Extremamente Tóxico); <br> <b>Classe Agronômica:</b> Herbicida">2,4D</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnblue" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Organofosforados; <br> <b>Classe Toxicológica:</b> Classe III (Medianamente Tóxico); <br> <b>Classe Agronômica:</b> Inseticida e Acaricida">Acefato</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnred" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Carbamato; <br><b>Classe Toxicológica:</b> Classe I (Extremamente Tóxico); <br><b>Classe Agronômica:</b> Inseticida, Acaricida e Nematicida; <br><b>Nome Comum: Chumbinho</b>; <br><b>AGROTOXICO PROIBIDO PELA ANVISA</b>">Aldicarbe</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnblue" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Organofosforados; <br><b>Classe Toxicológica:</b> Classe III (Medianamente Tóxico); <br> <b>Classe Agronômica:</b> Inseticida e Acaricida">Azoxistrobina</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnred" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Organofosforados; <br><b>Classe Toxicológica:</b> Classe I (Extremamente Tóxico); <br><b>Classe Agronômica:</b> Inseticida e Nematicida">Cadusafós</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btngreen" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Dicarboximida; <br> <b>Classe Toxicológica:</b> Classe IV (Pouco Tóxico); <br> <b>Classe Agronômica:</b> Fungicida">Captana</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnblue" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Benzimidazol; <br> <b>Classe Toxicológica:</b> Classe III (Medianamente Tóxico); <br> <b>Classe Agronômica:</b> Fungicida">Carbendazim</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnred" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Metilcarbamato de benzofuranila; <br> <b>Classe Toxicológica:</b> Classe I (Extremamente Tóxico); <br> <b>Classe Agronômica:</b> Inseticida, cupinicida, acaricida e nematicida; <br><b>AGROTOXICO PROIBIDO PELA ANVISA</b>">Carbofurano</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnyellow" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Piretróides; <br> <b>Classe Toxicológica:</b> Classe II (Altamente Tóxico); <br> <b>Classe Agronômica:</b> Inseticida e formicida">Cipermetrina</button>
+                </li>
+                <li class="list-group-item">
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btngreen" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Triazinamina; <br> <b>Classe Toxicológica:</b> Classe IV (Pouco Tóxico); <br> <b>Classe Agronômica:</b> Inseticida">Ciromazina</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnyellow" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Análogo de Pirazol; <br><b>Classe Toxicológica:</b> Classe II (Altamente Tóxico); <br> <b>Classe Agronômica:</b> Inseticida e acaricida">Clorfenapir</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnyellow" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Organofosforados; <br> <b>Classe Toxicológica:</b> Classe II (Altamente Tóxico); <br> <b>Classe Agronômica:</b> Inseticida formicida e acaricida">Clorpirifós</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnblue" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Neonicotinóide; <b>Classe Toxicológica:</b> Classe III (Medianamente Tóxico); <b>Classe Agronômica:</b> Inseticida">Clotianidina</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnblue" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Feniltiouréia; <br> <b>Classe Toxicológica:</b> Classe III (Medianamente Tóxico); <br> <b>Classe Agronômica:</b> Acaricida e Inseticida">Diafentiurom</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnred" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Triazol; <br> <b>Classe Toxicológica:</b> Classe I (Extremamente Tóxico); <br> <b>Classe Agronômica:</b> Fungicida">Difenoconazol</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnyellow" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Organofosforados; <br>  <b>Classe Toxicológica:</b> Classe II (Altamente Tóxico); <br> <b>Classe Agronômica:</b> Inseticida e Acaricida">Dimetoato</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnyellow" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Ditiocarbamatos; <br>  <b>Classe Toxicológica:</b> Classe II (Altamente Tóxico); <br> <b>Classe Agronômica:</b> Fungicida e Acaricida">Ditiocarbamatos</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnred" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Etileno; <br>  <b>Classe Toxicológica:</b> Classe I (Extremamente Tóxico); <br> <b>Classe Agronômica:</b> Regulador de crescimento">Etefom</button>
+
+                </li>
+                <li class="list-group-item">
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btngreen" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Éter difenílico; <br> <b>Classe Toxicológica:</b> Classe IV (Pouco Tóxico); <br> <b>Classe Agronômica:</b> Inseticida">Etofenproxi</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnyellow" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Piretróide; <br>  <b>Classe Toxicológica:</b> Classe II (Altamente Tóxico); <br> <b>Classe Agronômica:</b> Inseticida e Acaricida">Fenpropatrina</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnyellow" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Pirazol; <br>  <b>Classe Toxicológica:</b> Classe II (Altamente Tóxico); <br> <b>Classe Agronômica:</b> Formicida e Cupinicida">Fipronil</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnblue" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Neonicotinóide; <br> Classe III (Medianamente Tóxico); <br> <b>Classe Agronômica:</b> Fungicida">Flutriafol</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnblue" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Feniltiouréia; <br> <b>Classe Toxicológica:</b> Classe III (Medianamente Tóxico); <br> <b>Classe Agronômica:</b> Acaricida e Inseticida">Formetanato</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btngreen" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Glicina substituída; <br> <b>Classe Toxicológica:</b> Classe IV (Pouco Tóxico); <br> <b>Classe Agronômica:</b> Herbicida">Glifosato</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnblue" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Neonicotinóide; <br> <b>Classe Toxicológica:</b> Classe III (Medianamente Tóxico); <br> <b>Classe Agronômica:</b> Inseticida">Imidacloprido</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnblue" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Piretróide; <br> <b>Classe Toxicológica:</b> Classe III (Medianamente Tóxico); <br> <b>Classe Agronômica: </b>Inseticida">Lambda-cialotrina</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnblue" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Amônio quaternário; <br> <b>Classe Toxicológica:</b> Classe III (Medianamente Tóxico); <br> <b>Classe Agronômica: </b>Regulador do crescimento">Mepiquate</button>
+                </li>
+                <li class="list-group-item">
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnyellow" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Organofosforados; <br>  <b>Classe Toxicológica:</b> Classe II (Altamente Tóxico); <br> <b>Classe Agronômica:</b> Inseticida e Acaricida">Ometoato</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btngreen" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Feniluréia; <br>  <b>Classe Toxicológica:</b> Classe IV (Pouco Tóxico); <br> <b>Classe Agronômica:</b> Fungicida">Pencicurom</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnblue" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Dinitroanilina; <br> <b>Classe Toxicológica:</b> Classe III (Medianamente Tóxico); <br> <b>Classe Agronômica:</b> Herbicida">Pendimetalina</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnyellow" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Organofosforados; <br> <b>Classe Toxicológica:</b> Classe II (Altamente Tóxico); <br> <b>Classe Agronômica:</b> Inseticida e Acaricida">Profenofós</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnblue" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Carbamato; <br> <b>Classe Toxicológica:</b> Classe III (Medianamente Tóxico); <br> <b>Classe Agronômica:</b> Fungicida">Propamocarbe</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnblue" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Sulfito de alquila; <br> <b>Classe Toxicológica:</b> Classe III (Medianamente Tóxico); <br> <b>Classe Agronômica:</b> Acaricida">Propargito</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnyellow" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Organofosforados; <br>  <b>Classe Toxicológica:</b> Classe II (Altamente Tóxico); <br> <b>Classe Agronômica:</b> Inseticida e Acaricida">Protiofós</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btngreen" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Triazol; <br> <b>Classe Toxicológica:</b> Classe IV (Pouco Tóxico); <br> <b>Classe Agronômica:</b> Fungicida">Tebuconazol</button>
+                    <button id="btnAgro" data-html="true" type="button" data-trigger="focus"
+                        class="btn tooltipped btnblue" data-container="body" data-toggle="popover"
+                        data-position="bottom"
+                        data-tooltip="<b>Grupo Químico:</b> Neonicotinóide; <br> <b>Classe Toxicológica:</b> Classe III (Medianamente Tóxico); <br> <b>Classe Agronômica:</b> Inseticida">Tiametoxam</button>
+                </li>
+            </ul>
+
+
+
+            <p><a class="right fonte" href="http://portal.anvisa.gov.br/agrotoxicos">Fonte: Programa de Análise
+                    de Resíduos de Agrotóxicos em Alimentos - ANVISA </a><br></p>
+
+
+                            </div>
+                        </div><!--row-->
+                    </div>
+                </section>
+            
+            </div>
+            <!--meio-->
+</section>
+
+
+
+
+        <script src="js/p5.min.js"></script>
+        <script src="js/ecoprod_map.js"></script>
+
+
+
+    <!--FOOTER-->
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6 l6">
+                    <header>
+                        <h5>Saiba Mais</h5>
+                    </header>
+                    <div class="input-field col s12 m12">
+                        <input type="text" id="email" placeholder="E-mail" class="validate">
+                    </div> <!-- /.input-field -->
+                </div> <!-- /.col -->
+                <div id="social" class="col s12 m4 l4 offset-l2">
+                    <header>
+                        <h5>Nossas Redes</h5>
+                    </header>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div> <!-- /.col -->
+            </div> <!-- /.row -->
+        </div> <!-- /container -->
+        <div class="footer-copyright">
+            <div class="container"> Projeto para FICR - 2020
+                <a href="#" class="right"><img id="logo-heads" src="imagens/logo-heads.png" alt=""></a>
+            </div> <!-- /.container -->
+        </div> <!-- /.footer-copyright-->
+    </footer> <!-- /footer -->
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
