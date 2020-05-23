@@ -551,10 +551,7 @@ display: flex;
 }
 
 
-
-
-
-/* ---- Rômulo -----*/
+/* ---- PAGINA AGROTOXICOS-----*/
 
        
 #mapid { 
@@ -569,95 +566,216 @@ display: flex;
  #entrada{
     margin-top: 55px;
     font-size: 15px;
+ }
+
+
+#btnAgro {
+    width: 10.7%;
+    height: 35px;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    font-size: 10pt;
+    }
+
+.popover {
+    padding: 3px;
+    font-size: 7.5pt;
+    background-color: rgb(197, 228, 184);
+    text-align: left;
+    width: 350px;
     
-    }
-    #divs{
-     width: 35%;
-     margin-left: 5%;
-     float: left;
-    }
+}
 
-    #btnAgro {
-     width: 10.7%;
-     height: 35px;
-     padding: 0;
-     display: inline-block;
-     text-align: center;
-     font-size: 10pt;
-     }
-     .popover {
-         padding: 3px;
-         font-size: 7.5pt;
-         background-color: rgb(197, 228, 184)30, 255, 80)30, 255, 80)30, 255, 80);
-         text-align: left;
-         width: 350px;
-         
-     }
+.btnRom {
+    width: 100%;
+    height: 35px;
+    margin-top: 6px;
+    padding: 0;
+    text-align: center;
+    font-size: 7pt;
+    background-color: #2e4e06 ;
 
-     .btnRom {
-        width: 100%;
-        height: 35px;
-        margin-top: 6px;
-        padding: 0;
-        text-align: center;
-        font-size: 7pt;
-        background-color: #8a8b88 ;
-     }
+}
 
-     .btngreen {
-        background-color: #349727 ;
-        margin-top: 4px;
-        
-     }
-
-     .btnred {
-        background-color: #d80202 ;
-        margin-top: 4px;
-     }
-
-     .btnblue {
-        background-color: #0502c0 ;
-        margin-top: 4px;
-     }
-
-     .btnyellow {
-        background-color: #f6f317 ;
-        color: black;
-        margin-top: 4px;
-     }
+#pesquisa-ano{
+    margin-top: 20%;
+    text-align: center;
+    padding-bottom:0;
+    border:1px solid green;
+    margin-bottom: 0;
 
 
-     #meu {
-        font-size: 10pt;
-        margin-top: 2%;
-        padding-left: 10%;
-        
-     }
+}
 
-     .containerRomulo {
-        width: 80%;
-        margin-left: 10%;
+#pesquisa-ano p,
+#pesquisa-uf p{
+
+    margin-bottom: 20px;
+    text-align:center;
+    color:rgb(58, 44, 7);
+}
 
 
-     }
+#pesquisa-uf{
+    margin-top: 15%; 
+    text-align: center;
+    border:1px solid green;
+    padding: 10px;
+    text-align: center;
+}
 
-     div button{
-      
-       
-     }
-
-#botoes{
-    margin-right:20%;
-   margin-top:3%;
-         margin-bottom: 3%;
+#pesquisa-uf label {
+text-align: right;
 
 }
 
 
-     #die{
-  
-     }
+#meu {
+    font-size: 10pt;
+    margin-top: 2%;
+    padding-left: 10%;
+    color:rgb(58, 44, 7);        
+}
 
-     #submit{
-         margin-right: 10px;
-     }
+
+#meu:hover{
+    font-size:16px;
+    color:green;
+    font-weight: 600;
+}
+
+#divs{
+    width: 35%;
+    margin-left: 5%;
+    float: left;
+    margin-top:5%;
+    margin-bottom: 10%;
+    border:1px solid green;
+    padding:10px
+}
+
+#divs p{
+    font-weight: bold;
+    color:rgb(58, 44, 7);
+    
+}
+
+
+#divs label{
+    color:rgb(58, 44, 7);
+
+}
+
+#circle{
+    width: 50%;
+    height: 50%; 
+    margin-left: 2%;
+    float: left;
+    margin-top: 20%;
+
+}   
+
+
+[type="radio"]:checked +span:before {
+    border:2px solid rgb(82, 43, 7);
+    transition: 600ms;
+}
+
+
+[type="radio"]:checked +span:after {
+
+    border:1px solid rgb(13, 114, 9);
+    background-color: rgb(10, 150, 10);
+}
+
+
+
+
+.btngreen {
+    background-color: #349727 ;
+    margin-top: 4px;
+
+}
+
+.btnred {
+    background-color: #d80202 ;
+    margin-top: 4px;
+}
+
+.btnblue {
+    background-color: #0502c0 ;
+    margin-top: 4px;
+}
+
+.btnyellow {
+    background-color: #f6f317 ;
+    color: black;
+    margin-top: 4px;
+}
+
+
+.containerRomulo {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.chart-container{
+    position: relative; 
+    height:200px; 
+    width:100%;
+    margin-top:4%;
+}
+
+
+#tabelas{
+    margin-top: 8%;
+
+}
+
+    
+#title{
+    font-size: 2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 0.2em;
+    color:rgb(78, 57, 12);
+    margin-bottom:40px;
+    padding-top:10%;
+    font-weight: bold;
+
+
+}
+
+#title h5{
+    margin-top: 50%;
+}
+
+
+#botoes{
+    margin-right:20%;
+    margin-top:3%;
+    margin-bottom: 3%;
+
+}
+
+
+#submit{
+    margin-right: 10px;
+}
+
+
+.fonte{
+    margin-top:10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
