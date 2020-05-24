@@ -299,6 +299,7 @@ section#page-produtos{
 
 .btn{
     background-color: #2e4e06 ;
+   
     
     
 }
@@ -562,7 +563,12 @@ display: flex;
     width: 90%;
  }
     
-   
+#grafico{
+  
+    margin-bottom:20px;
+}  
+
+
  #entrada{
     margin-top: 55px;
     font-size: 15px;
@@ -609,7 +615,8 @@ display: flex;
 }
 
 #pesquisa-ano p,
-#pesquisa-uf p{
+#pesquisa-uf p,
+#divs p{
 
     margin-bottom: 20px;
     text-align:center;
@@ -635,7 +642,8 @@ text-align: right;
     font-size: 10pt;
     margin-top: 2%;
     padding-left: 10%;
-    color:rgb(58, 44, 7);        
+    color:rgb(58, 44, 7);     
+     
 }
 
 
@@ -644,35 +652,36 @@ text-align: right;
     color:green;
     font-weight: 600;
 }
-
 #divs{
-    width: 35%;
-    margin-left: 5%;
+    width:150px;    
     float: left;
-    margin-top:5%;
-    margin-bottom: 10%;
+    margin-left:10%;
+    margin-bottom: 10;
     border:1px solid green;
-    padding:10px
-}
-
-#divs p{
-    font-weight: bold;
-    color:rgb(58, 44, 7);
-    
+    padding:5px;
 }
 
 
 #divs label{
     color:rgb(58, 44, 7);
 
+
 }
+
+#divs label:hover{
+    font-size:16px;
+    color:green;
+    font-weight: 600;
+}
+
 
 #circle{
     width: 50%;
     height: 50%; 
-    margin-left: 2%;
+    margin-left:10%;
     float: left;
-    margin-top: 20%;
+    margin-top: 10%;
+    margin-bottom:20px;
 
 }   
 
@@ -701,6 +710,7 @@ text-align: right;
 .btnred {
     background-color: #d80202 ;
     margin-top: 4px;
+    
 }
 
 .btnblue {
@@ -768,8 +778,14 @@ text-align: right;
     margin-top:10%;
 }
 
+#listas{
+    margin-top:10%;
+    
+    }
 
-
+#listas a{
+    color:green;
+}
 
 
 
