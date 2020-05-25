@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/layout.css">
+
+    
+      <title>Projeto Ecoprod</title>
+</head>
+
+
+<body>  
+<section id="top">
+    <div class="navbar-fixed nav-wrapper ">
+        <nav>                 
+            <div class="col s8 m3 ">
+                <a href="index.html"><img class="logo left" src=imagens/ecoprod.png></a>      
+            </div><!--col-->
+            <div class="col s3 m7 right ">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger "><i class="material-icons icon-color right">menu</i></a>
+                <ul class="hide-on-med-and-down right">           
+                    <li class="waves-effect waves-green"><a href="produto.html">Produtos</a></li>
+                    <li class="waves-effect waves-green"><a href="mapa_interativo.html">Local</a></li>
+                    <li class="waves-effect waves-green"><a href="forum.html">Fórum</a></li>
+                    <li class="waves-effect waves-green"><a href="pontocomercial.html">Ponto Comercial</a></li>
+                    <li class="waves-effect waves-green"><a href="#">HEADS</a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dados<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>        
+            </div><!--col-->
+        </nav>        
+    </div><!--nav-wrapper-->
+    <div>
+    <ul id="dropdown1" class="dropdown-content ">
+        <li><a href="Agrotoxicos.html">Agrotóxicos</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+    </ul>
+    </div>
+                <ul class="sidenav center" id="mobile-demo">
+                    <li><a href="produto.html">Produtos</a></li>
+                    <li><a href="mapa_interativo.html">Local</a></li>
+                    <li><a href="forum.html">Fórum</a></li>
+                    <li><a href="pontocomercial.html">Ponto Comercial</a></li>
+                    <li><a href="heads.html">HEADS</a></li>
+                </ul>            
+</section>
+
+
+
+<section id="page-produtos">
+
+<!--Botao de Busca-->     
+    <div id="meio" class="z-depth-4">
+        <div class="container">         
+            <div class="row">             
+                <div class="col s12 center">
+                    <h3>Fórum</h3>
+                </div><!--col-->        
+                     
+             <div class="col s12 l6">
+                    <div id="box-search-forum">                        
+                        <div class="center">                          
+                            <input type="search" id="texto" placeholder="Pesquisar">
+                        </div>    
+                    </div><!--box-search-->
+                    <div class="col s1 l1" id="botao-pesquisar">
+                        <a id="search-botao" class="waves-effect waves-light  btn "><i class="material-icons">search</i></a>
+                    </div><!--col-->                        
+                </div><!--col-->
+            
+
+               <div id="mais-circle" class="col s12 l6">                   
+                    <a href="#modal2" class="waves-effect waves-light btn botao-novo-topico modal-trigger right"><i id="mais-circle" class="material-icons mais-circle">add_circle_outline</i>
+                    <p>Novo Tópico</p></a>
+               </div>             
+                 </div><!--row-->              
+               
+           
+            <div class="perguntas">
+                <div class="row">           
+                    <div class="col s12 center">
+                      <h4>Perguntas e Respostas</h4>                  
+                    </div>                    
+                </div>
+            </div>
+
+
+           
+
+            <div class="usuarios">
+                <div class="row">           
+                    <div  id="forum-coments" class="col s12">
+                        <div class="pessoass col s8">
+                            <i class="material-icons icones ">person</i>
+                            <a href="" class="waves-effect waves-light btn botao-novo">Novo</a>                       
+                            <h5 id="maria">Maria</h5>  
+                        </div><!--pessoas-->                                                                        
+                            <div  id="topicos" class="col s8">
+                                <div id="comentario-usuarios" class="col s5">
+                                    <a href=""><i class="material-icons mensagens">message</i></a>
+                                    <h6>2</h6>                                                       
+                                    <a href=""><i id="arrow-down" class="material-icons right">keyboard_arrow_down</i></a>
+                                </div><!--col s4-->          
+                            </div><!--topicos-->              
+                    </div><!--forum-coments-->
+                </div><!--row-->
+            </div><!--usuarios-->
+
+      
+
+
+
+
+
+
+
+              
+            <div class="usuarios">
+                <div class="row">           
+                    <div  id="forum-coments" class="col s12">
+                        <div class="pessoas col s4">
+                            <i class="material-icons icones ">person</i>                        
+                            <h5 id="names">José</h5>  
+                        </div><!--pessoas-->                                                                        
+                            <div  id="topicos" class="col s12">
+                                <div id="comentario-usuarios" class="col s4">
+                                    <a href=""><i class="material-icons mensagens">message</i></a>
+                                    <h6>5</h6>                                                       
+                                    <a href=""><i id="arrow-down" class="material-icons right">keyboard_arrow_down</i></a>
+                                </div><!--col s4-->          
+                            </div><!--topicos-->              
+                    </div><!--forum-coments-->
+                </div><!--row-->
+            </div><!--usuarios-->
+     
+            <div class="usuarios">
+                <div class="row">           
+                    <div  id="forum-coments" class="col s12">
+                        <div class="pessoas col s4">
+                            <i class="material-icons icones ">person</i>                        
+                            <h5 id="names">Paula</h5>  
+                        </div><!--pessoas-->                                                                        
+                            <div  id="topicos" class="col s12">
+                                <div id="comentario-usuarios" class="col s4">
+                                    <a href=""><i class="material-icons mensagens">message</i></a>
+                                    <h6>8</h6>                                                       
+                                    <a href=""><i id="arrow-down" class="material-icons right">keyboard_arrow_down</i></a>
+                                </div><!--col s4-->          
+                            </div><!--topicos-->              
+                    </div><!--forum-coments-->
+                </div><!--row-->
+            </div><!--usuarios-->
+
+            <div class="usuarios">
+                <div class="row">           
+                    <div  id="forum-coments" class="col s12">
+                        <div class="pessoas col s4">
+                            <i class="material-icons icones ">person</i>                        
+                            <h5 id="names">Pedro</h5>  
+                        </div><!--pessoas-->                                                                        
+                            <div  id="topicos" class="col s12">
+                                <div id="comentario-usuarios" class="col s4">
+                                    <a href=""><i class="material-icons mensagens">message</i></a>
+                                    <h6>3</h6>                                                       
+                                    <a href=""><i id="arrow-down" class="material-icons right">keyboard_arrow_down</i></a>
+                                </div><!--col s4-->          
+                            </div><!--topicos-->              
+                    </div><!--forum-coments-->
+                </div><!--row-->
+            </div><!--usuarios-->
+
+            <div class="usuarios">
+                <div class="row">           
+                    <div  id="forum-coments" class="col s12">
+                        <div class="pessoas col s4">
+                            <i class="material-icons icones ">person</i>                        
+                            <h5 id="names">Joana</h5>  
+                        </div><!--pessoas-->                                                                        
+                            <div  id="topicos" class="col s12">
+                                <div id="comentario-usuarios" class="col s4">
+                                    <a href=""><i class="material-icons mensagens">message</i></a>
+                                    <h6>9</h6>                                                       
+                                    <a href=""><i id="arrow-down" class="material-icons right">keyboard_arrow_down</i></a>
+                                </div><!--col s4-->          
+                            </div><!--topicos-->              
+                    </div><!--forum-coments-->
+                </div><!--row-->
+            </div><!--usuarios-->
+
+
+
+
+            <div id="paginacao">
+                <ul class="pagination right">
+                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="active green darken-4"><a href="#!">1</a></li>
+                    <li class="waves-effect"><a href="#!">2</a></li>
+                    <li class="waves-effect"><a href="#!">3</a></li>
+                    <li class="waves-effect"><a href="#!">4</a></li>
+                    <li class="waves-effect"><a href="#!">5</a></li>
+                    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+            </div>
+
+
+
+
+
+
+
+
+            </div><!--col-->        
+        </div><!--container-->
+    </div><!--meio-->
+</section>
+                    
+
+ 
+
+        
+
+    <!--FOOTER-->
+    <footer class="page-footer">
+        <div class="container">
+        <div class="row">
+            <div class="col s12 m6 l6">
+            <header><h5>Saiba Mais</h5></header>
+            <div class="input-field col s12 m12">
+                <input type="text" id="email" placeholder="E-mail" class="validate">
+            </div> <!-- /.input-field -->
+            </div> <!-- /.col -->
+            <div id="social" class="col s12 m4 l4 offset-l2">
+            <header><h5>Nossas Redes</h5></header>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+            </div>  <!-- /.col -->
+        </div>	<!-- /.row -->
+        </div>	<!-- /container -->
+        <div class="footer-copyright">
+        <div class="container"> Projeto para FICR - 2020    
+            <a href="#" class="right"><img id="logo-heads" src="imagens/logo-heads.PNG" alt=""></a>
+        </div>	<!-- /.container -->
+        </div>	<!-- /.footer-copyright-->
+    </footer> <!-- /footer -->
+    
+
+
+
+
+    <div class="container">
+        <div class="modal" id="modal2">
+            <h5 class="modal-close">&#10005;</h5>    
+            <div>
+                <h4 class="center">Novo Tópico</h4>
+                <form id="novo-topico" action="">             
+                    <div class="col s12 l12 m12 iniciais">                  
+                        Nome<input type="text" id="name">
+                    </div> <!-- /.input-field -->
+
+                    <div class="col s12 l12 m12 iniciais">                  
+                        E-mail<input type="email" id="email-msg">
+                    </div> <!-- /.input-field -->
+
+                    <div class="col s12 l12 m12 iniciais">                  
+                        Assunto<input type="text" id="assunto">
+                    </div> <!-- /.input-field -->
+
+                    <div class="col s12 m12 iniciais">                                                               
+                        Sua Mensagem
+                    </div>
+                    <div class="col s12">    
+                        <textarea type="textarea" id="text-area"  ></textarea>
+                    </div> <!-- /.input-field -->
+
+                    <div class="col s12">
+                        <div class="row">
+                            <div class="file-field input-field left">
+                                <div id="enviar-arquivo" class="center enviar-arquivo">
+                                    <i class="material-icons">photo</i>                            
+                                <input type="file" multiple>                                
+                                    <i class="material-icons">camera_alt</i>                            
+                                <input type="file" multiple>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col s12 center">
+                        <a id="" class="waves-effect waves-light btn botao-enviar">Enviar</a>
+                    </div>
+                </form>
+            </div>
+
+
+
+
+                  
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="js/scriptrenata.js"></script>
+
+</body>
+</html>
