@@ -375,18 +375,258 @@ section#produto-escolhido{
 }
 
 
+/* Page FORUM */
+
+
+#box-search-forum{
+       
+    width: 90%;
+    margin-top:20%;
+    margin-left:0;    
+}
+
+#mais-circle{
+    font-size: 30px;  
+    float:right; 
+    margin-top:2px;  
+}
+
+#mais-circle p{
+  margin-top:2%;
+  font-size:1.3em;  
+}
+
+.botao-novo-topico{   
+    width: 200px;
+    margin-top:19%;
+    margin-right:0px;
+    height:40px;
+}
+
+
+.perguntas{
+    border:1px solid black;
+    height:3%;
+    background-color: rgb(12, 121, 12);
+    margin:1%;
+    margin-top:10%;
+
+}
+.perguntas h4{
+    font-size:2em;
+    font-family: cursive;
+    color:rgb(247, 244, 248);    
+}
+
+
+.usuarios{
+   border:1px solid black;   
+    background-color: rgb(189, 228, 189);
+    margin:5px;              
+}
+
+
+#forum-coments{
+   
+    display:flex;
+    margin-top:10px;
+    padding-right:0;  
+    
+}
+
+.pessoas{  
+    height:55px;   
+}
+
+.icones {
+
+    font-size:50px;
+    border: 1px solid black;
+      float:left;
+      margin-left:5px;   
+
+}
+
+
+#names{
+    padding-left:70px;
+    font-size:180%;
+  
+}
+
+#comentario-usuarios{
+    float:right;
+    width:30%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top:6px;
+    padding-top:6px;
+
+}
+
+
+
+
+.mensagens{
+    color:green;
+    font-size: 30px;      
+    margin-right: 8px;
+}
+
+#arrow-down{
+    font-size: 30px; 
+    float:right;
+    color:black;
+    padding:0;
+}
+
+
+h6{
+    margin-top:5px;
+    margin-right:5px;
+    
+    
+}
+
+
+
+
+
+
+.botao-novo{
+    float: left;
+    margin-right:10px;
+    margin-left:10px;
+    margin-top:3%;
+    
+
+}
+
+
+.pessoass{
+    height:55px;   
+  
+}
+
+
+
+
+
+
+
+
+
+#maria{
+    
+    width:250px;
+}
+
+
+#nome-usuario{
+    display:flex;
+    justify-content: start;
+    margin-top:10px;
+    
+    width: 180px;
+    margin-left:0;
+
+}
+
+
+
+
+#paginacao{
+    margin-bottom:10%;
+}
+
+#modal2{
+    background-color:rgb(165, 218, 165);
+    padding:0;
+
+  
+}
+
+#novo-topico{
+    margin-top:30px;
+    
+
+}
+
+
+#assunto,
+#email-msg,
+#name,
+#msg-usuario{
+width:80%;
+height: 35px;    
+font-family: Arial;
+font-size: 20px;    
+background-color: white;
+padding-left:1%;
+margin-left:2%;
+
+}
+
+.iniciais{
+    margin-left:3%;
+}
+#text-area{
+    background-color: white;
+    width:380px;
+    height: 100px; 
+    margin-left:30px;
+
+}
+
+#assunto {
+    margin-left:1%;
+}
+
+
+
+div#modal2.modal.open {
+    display: block;
+    opacity: 1;
+    width:450px;
+    height:600px;
+    padding:20px;
+    
+
+}
+
+
+
+
+
+
+
+.enviar-arquivo{
+    
+    padding:2px;
+    margin-top:10px;
+    margin-left:40px;
+    margin-right:10px;
+}
+
+.botao-enviar{
+    width:200px;
+}
+
 /*page ponto comercial escolhido */
 section#ponto-comercial-escolhido{
 
     background-color:white;
     padding-top: 4%;
     padding-bottom: 4%;
-
 }
 
 #meio h3{
     margin-top:10%;
 }
+
+
+
+
 
 
 
@@ -421,26 +661,17 @@ section#ponto-comercial{
 }
 
 
-
-
-
-
 /*Page Perfil Ponto Comercial */
 
 
-h3{
-    
+h3{    
     color:#233720;
-
 }
-
 
 
 /*AREA DE LOGIN */
 #login{
-    width:380px;
-
-    
+    width:380px;    
 }
 
 .modal-close{
@@ -449,8 +680,6 @@ h3{
     right:10px ;
     margin: 0;
     padding: 0;
-    
-
 }
 
 .ic-color, h4, .modal-close {
@@ -470,18 +699,15 @@ h3{
 .modal-content{
     width: 100%;
     background-color: rgb(227, 250, 216);
-
 }
 
 .modal{
     margin-top:5%;
-
 }
 
 #check-box{
     margin-left:80px;
 }
-
 
   .input-field label{
     color: rgb(71, 37, 5);
@@ -508,28 +734,25 @@ h3{
 
 
 
+
+
+
 /*AREA DE CADASTRO */
 
 form label{
-    display: flex;
-
-    
+    display: flex;    
 }
 
 div#modal1.modal.open {
     display: block;
-    opacity: 1;
-
-    
-
+    opacity: 1;  
 }
 
 #cadastrar{
-    background-color: rgb(88, 73, 31);
+    background-color: rgb(29, 27, 22);
     margin-top:14px;
     width: 230px;
 }
-
 
 #cadastrar:hover{
     background-color: rgb(173, 113, 33);
@@ -537,13 +760,11 @@ div#modal1.modal.open {
 
 #modal1{
 display: flex;
-
 }
 
 #senha, #endereco, #nome, #pontoComercial, #icon_telephone,#icon_cpf, #icon_repetirEmail, #icon_email, #repetir-password{
     margin-bottom: 1px;
     margin-top:1px;
-
 }
 
 .input-field{
@@ -563,8 +784,7 @@ display: flex;
     width: 90%;
  }
     
-#grafico{
-  
+#grafico{  
     margin-bottom:20px;
 }  
 
@@ -574,7 +794,6 @@ display: flex;
     font-size: 15px;
  }
 
-
 #btnAgro {
     width: 10.7%;
     height: 35px;
@@ -582,15 +801,14 @@ display: flex;
     display: inline-block;
     text-align: center;
     font-size: 10pt;
-    }
+}
 
 .popover {
     padding: 3px;
     font-size: 7.5pt;
     background-color: rgb(197, 228, 184);
     text-align: left;
-    width: 350px;
-    
+    width: 350px;    
 }
 
 .btnRom {
@@ -601,7 +819,6 @@ display: flex;
     text-align: center;
     font-size: 7pt;
     background-color: #2e4e06 ;
-
 }
 
 #pesquisa-ano{
@@ -610,14 +827,11 @@ display: flex;
     padding-bottom:0;
     border:1px solid green;
     margin-bottom: 0;
-
-
 }
 
 #pesquisa-ano p,
 #pesquisa-uf p,
 #divs p{
-
     margin-bottom: 20px;
     text-align:center;
     color:rgb(58, 44, 7);
@@ -634,18 +848,14 @@ display: flex;
 
 #pesquisa-uf label {
 text-align: right;
-
 }
-
 
 #meu {
     font-size: 10pt;
     margin-top: 2%;
     padding-left: 10%;
     color:rgb(58, 44, 7);     
-     
 }
-
 
 #meu:hover{
     font-size:16px;
@@ -661,11 +871,8 @@ text-align: right;
     padding:5px;
 }
 
-
 #divs label{
     color:rgb(58, 44, 7);
-
-
 }
 
 #divs label:hover{
@@ -674,7 +881,6 @@ text-align: right;
     font-weight: 600;
 }
 
-
 #circle{
     width: 50%;
     height: 50%; 
@@ -682,35 +888,26 @@ text-align: right;
     float: left;
     margin-top: 10%;
     margin-bottom:20px;
-
 }   
-
 
 [type="radio"]:checked +span:before {
     border:2px solid rgb(82, 43, 7);
     transition: 600ms;
 }
 
-
 [type="radio"]:checked +span:after {
-
     border:1px solid rgb(13, 114, 9);
     background-color: rgb(10, 150, 10);
 }
 
-
-
-
 .btngreen {
     background-color: #349727 ;
     margin-top: 4px;
-
 }
 
 .btnred {
     background-color: #d80202 ;
-    margin-top: 4px;
-    
+    margin-top: 4px;    
 }
 
 .btnblue {
@@ -724,7 +921,6 @@ text-align: right;
     margin-top: 4px;
 }
 
-
 .containerRomulo {
     width: 80%;
     margin-left: 10%;
@@ -737,12 +933,9 @@ text-align: right;
     margin-top:4%;
 }
 
-
 #tabelas{
     margin-top: 8%;
-
 }
-
     
 #title{
     font-size: 2em;
@@ -752,27 +945,21 @@ text-align: right;
     margin-bottom:40px;
     padding-top:10%;
     font-weight: bold;
-
-
 }
 
 #title h5{
     margin-top: 50%;
 }
 
-
 #botoes{
     margin-right:20%;
     margin-top:3%;
     margin-bottom: 3%;
-
 }
-
 
 #submit{
     margin-right: 10px;
 }
-
 
 .fonte{
     margin-top:10%;
@@ -780,12 +967,12 @@ text-align: right;
 
 #listas{
     margin-top:10%;
-    
-    }
+}
 
 #listas a{
     color:green;
 }
+
 
 
 
