@@ -171,7 +171,8 @@
             <div class="input-field">
                 <i class="material-icons prefix ic-color">email</i>
                 <label for="usuario">E-mail</label>
-                <input type="email" id="usuario">
+                <input type="email" id="usuario"  class="validate">
+                <span class="helper-text" data-error="Preenche o e-mail corretamente"></span>
               
             </div><br>
 
@@ -188,7 +189,7 @@
                 </label><br>
             </div>
 
-            <a id="entrar" class="waves-effect waves-light btn ">Entrar </a>
+            <a type="submit" id="entrar" class="waves-effect waves-light btn ">Entrar </a>
 
         </form>
     </div>
@@ -208,41 +209,45 @@
                 <div class="row">
                     <div class="input-field inline col s12 ">
                         <label for="nome">Nome Completo * </label>
-                        <input type="text" id="nome">
+                        <input type="text"  class="validate"  required pattern="[A-Za-zÀ-ú\s]+$"  required minlength="2" maxlength="20" required id="nome">
+                        <span class="helper-text" data-error="Preenche o nome corretamente"></span>   
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="input-field inline col s6">
-                        <label for="pontoComercial">Ponto Comercial * </label>
-                        <input type="text" id="pontoComercial">
+                        <label  for="pontoComercial">Ponto Comercial * </label>
+                        <input type="text" required id="pontoComercial">
                     </div>
                     <div class="input-field inline col s6">
-                        <label for="endereco">Endereço * </label>
-                        <input type="text" id="endereco">
+                        <label  for="endereco">Endereço * </label>
+                        <input type="text" required id="endereco">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="input-field  col s6">
-                        <label for="telephone">Telefone * </label>
-                        <input id="telephone" type="tel" class="validate">
+                        <label data-error="Preencha o campo Numero corretamente" for="telephone">Telefone * </label>
+                        <input id="telephone" pattern="[0-9]+$"  type="tel" class="validate">
+                        <span class="helper-text" data-error="Preenche o telefone corretamente"></span>   
                     </div>
                     <div class="input-field col s6">
-                        <label for="icon_cpf">CPF *</label>
-                        <input id="icon_cpf" type="text" class="validate">
-                     
+                        <label data-error="Preencha o campo Numero corretamente" for="icon_cpf">CPF *</label>
+                        <input id="icon_cpf" pattern="[0-9]+$" type="text" required maxlength="11" minlength="11" class="validate">
+                        <span class="helper-text" data-error="Preenche o CPF corretamente"></span>   
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="input-field col s6">
                         <label for="icon_email">E-mail * </label>
-                        <input id="icon_email" type="email" class="validate">                    
+                        <input id="icon_email" type="email" class="validate">      
+                        <span class="helper-text" data-error="Preenche o e-mail corretamente"></span>              
                     </div>
                     <div class="input-field col s6">
-                        <label for="icon_repetirEmail">Repetir Email *</label>
-                        <input id="icon_repetirEmail" type="email" class="validate">                        
+                        <label  for="icon_repetirEmail">Repetir Email *</label>
+                        <input  id="icon_repetirEmail" type="email" class="validate">                        
+                        <span class="helper-text" data-error="Preenche o e-mail corretamente"></span>
                     </div>
                 </div>
 
@@ -250,14 +255,15 @@
                     <div class="input-field inline col s6">
                         <label for="senha">Senha * </label>
                         <input type="password" id="senha">
+                        
                     </div>
                     <div class="input-field inline col s6">
                         <label for="repetir-password">Repetir Senha * </label>
-                        <input type="password" id="repetir-password">
+                        <input type="password"  id="repetir-password">
                     </div>
                 </div>
                 <div class="col s12 center">
-                    <a id="cadastrar" class="waves-effect waves-light btn">Cadastrar</a>
+                    <a type="submit" id="cadastrar" class="waves-effect waves-light btn">Cadastrar</a>
                 </div>
             </form>
         </div>
