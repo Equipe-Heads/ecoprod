@@ -14,7 +14,7 @@ body{
 ul li a{
     font-size: 1.5em;
     font-weight: 400;
-    color:rgb(51, 121, 10);
+    color:#ffff;
     margin-top: 2px;
 }
 
@@ -26,7 +26,7 @@ ul li a{
 
 
 section#top nav{
-    background-color:rgb(175, 238, 50);
+    background-color:#32261b;
     height:4.8em;
 
 }
@@ -95,13 +95,6 @@ h2{
 .foto{
     height:250px;
 }
-
-/*
-#freepik{
-    margin-left:70%;
-    
-    color:rgb(199, 191, 171);   
-}*/
 
 #info-organicos{
  padding-bottom:130px;
@@ -185,12 +178,12 @@ div#social ul li:nth-child(2) a:hover {background-position: -128px -32px;}
 }
 
 .page-footer{
-    background-color: #7EA478;
+    background-color: #264e20;
     
     }
     
     .page-footer .footer-copyright{
-        background-color: #496845;
+        background-color: #233421;
     }
 
 
@@ -408,7 +401,7 @@ section#produto-escolhido{
     border:1px solid black;
     height:3%;
     background-color: rgb(12, 121, 12);
-    margin:1%;
+    margin:0.5%;
     margin-top:10%;
 
 }
@@ -495,8 +488,8 @@ h6{
 
 .botao-novo{
     float: left;
-    margin-right:10px;
-    margin-left:10px;
+    margin-right:9px;
+    margin-left:9px;
     margin-top:3%;
     
 
@@ -507,12 +500,6 @@ h6{
     height:55px;   
   
 }
-
-
-
-
-
-
 
 
 
@@ -533,8 +520,6 @@ h6{
 }
 
 
-
-
 #paginacao{
     margin-bottom:10%;
 }
@@ -542,13 +527,10 @@ h6{
 #modal2{
     background-color:rgb(165, 218, 165);
     padding:0;
-
-  
 }
 
 #novo-topico{
-    margin-top:30px;
-    
+    margin-top:30px;  
 
 }
 
@@ -594,12 +576,6 @@ div#modal2.modal.open {
 
 }
 
-
-
-
-
-
-
 .enviar-arquivo{
     
     padding:2px;
@@ -623,11 +599,6 @@ section#ponto-comercial-escolhido{
 #meio h3{
     margin-top:10%;
 }
-
-
-
-
-
 
 
 /* Page Ponto Comercial */
@@ -689,11 +660,11 @@ h3{
 #entrar{
     margin-top:10%;
     width: 330px;
-    background-color: rgb(88, 73, 31);
+    background-color: rgb(49, 37, 4);
 }
 
 #entrar:hover{
-    background-color: rgb(173, 113, 33);
+    background-color: rgb(134, 80, 10);
 }
 
 .modal-content{
@@ -749,13 +720,13 @@ div#modal1.modal.open {
 }
 
 #cadastrar{
-    background-color: rgb(29, 27, 22);
+    background-color:   rgb(49, 37, 4);
     margin-top:14px;
     width: 230px;
 }
 
 #cadastrar:hover{
-    background-color: rgb(173, 113, 33);
+    background-color: rgb(134, 80, 10);
 }
 
 #modal1{
