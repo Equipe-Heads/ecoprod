@@ -31,10 +31,10 @@
 
 
 //botao cadastrar
-  const form = document.getElementById('novo-topico');
+ const form = document.getElementById('novo-topico');
 
-form.addEventListener('submit', (e => {
+form.addEventListener('submit', () => {
  alert("Cadastro realizado com sucesso")
 
 
-}))
+})
