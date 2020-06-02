@@ -217,27 +217,31 @@
         <div class="modal-content">
             <h4 class="center">Formulário de Cadastro</h4>
             <form action="https://formspree.io/maypoyrq" method="post" id="novo-topico" class="center">
+                <div class="row">
                 <div style="margin-right:3%;" class="col s12 iniciais ">
                     <input type="text"  placeholder="Nome Completo *" class="validate"  required pattern="[A-Za-zÀ-ú\s]+$"  required minlength="2" maxlength="20" required id="nome">
                         <span class="helper-text" data-error="Preenche o nome corretamente"></span>   
-
+                </div>
                 </div> <!-- /.input-field -->
             
-            
+                <div class="row">
                 <div style="margin-right:3%;"  class="col s12 iniciais ">
                     <input type="text" required id="ponto-comercial-input" placeholder="Ponto Comercial *">
                 </div> <!-- /.input-field -->
+                </div>
             
+                <div class="row">
                 <div style="margin-right:3%;" class="col s12 iniciais ">
                     <input type="text" required id="endereco-input" placeholder="Endereço *">
                 </div> <!-- /.input-field -->
-            
+                </div>
+
                 <div class="row" >
                     <div id="zz"   class="col s6 iniciais ">
                         <input id="telefone-input" pattern="[0-9]+$"  type="tel" class="validate" placeholder="Telefone *">
                         <span class="helper-text" data-error="Preenche o telefone corretamente"></span>  
                     </div>
-                    <div id="zz" style="margin-left:3.5%;"class="col s6  ">                
+                    <div id="zz" style="margin-left:6%;"class="col s6  ">                
                         <input id="cpf-input" pattern="[0-9]+$" type="text" required maxlength="11" minlength="11" class="validate" placeholder="CPF *">
                         <span class="helper-text" data-error="Preenche o CPF corretamente"></span>  
                     </div> <!-- /.input-field -->
@@ -249,7 +253,7 @@
                         <input type="email" required id="email-input" class="validate" placeholder="Email *">
                         <span class="helper-text" data-error="Preenche o e-mail corretamente"></span> 
                     </div> <!-- /.input-field -->            
-                    <div id="zz" style="margin-left:3.5%;" class="col s6 iniciais ">
+                    <div id="zz" style="margin-left:6%;" class="col s6 iniciais ">
                         <input type="email" required id="Repetir-email-input" class="validate" placeholder="Repetir Email *">
                         <span class="helper-text" data-error="Preenche o e-mail corretamente"></span> 
                     </div> <!-- /.input-field -->
@@ -259,7 +263,7 @@
                     <div id="zz" class="col s6 iniciais ">
                         <input type="password" required id="senha-input" placeholder="Senha *">
                     </div>            
-                    <div id="zz" style="margin-left:3.5%;" class="col s6 iniciais ">
+                    <div id="zz" style="margin-left:6%;" class="col s6 iniciais ">
                         <input type="password" required id="repetir-senha-input" placeholder="Repetir Senha *">
                     </div>
                 </div>
