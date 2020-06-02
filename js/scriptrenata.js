@@ -1,8 +1,4 @@
 //botao Menu
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
-  });
 
   // Or with jQuery
 
@@ -13,12 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //modal-trigger
 
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems, options);
-  });
-
-  // Or with jQuery
 
   $(document).ready(function(){
     $('.modal').modal();
@@ -40,7 +30,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-  $(document).ready(function(){
-    $('.modal').modal();
+//botao cadastrar
+  const form = document.getElementById('novo-topico');
 
-  });
+form.addEventListener('submit', (e => {
+ alert("Cadastro realizado com sucesso")
+
+
+}))
