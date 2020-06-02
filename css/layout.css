@@ -1037,13 +1037,18 @@ div#social ul li:nth-child(2) a:hover {background-position: -128px -32px;}
 
 #logo-heads{
     margin-top:0;   
-    height:70px;
+    height:50px;
  
 }
-#saiba-mais h5{
+#saiba-mais p{
     margin-left:2%;
     margin-bottom:0;
+    font-size:20px;
     
+}
+#social p{
+    font-size:20px;
+    margin-bottom: 0;
 }
 
 .page-footer{
@@ -1063,7 +1068,7 @@ div#social ul li:nth-child(2) a:hover {background-position: -128px -32px;}
 
 #dd{
   
-    margin-top: 3.3%;
+    margin-top: 2.7%;
     padding-bottom:0;
     margin-left:1%;
     width: 40%;
@@ -1099,7 +1104,7 @@ div#social ul li:nth-child(2) a:hover {background-position: -128px -32px;}
         margin-left:5%;
     }
     #dd{
-        padding-top: 5%;
+        padding-top: 4%;
     }
 #email{
     width:90%;
