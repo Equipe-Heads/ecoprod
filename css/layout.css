@@ -664,7 +664,70 @@ h3{
 
 
 
+  #novo-topico{
+     
+      padding:0;
+      margin:0;
+  }
 
+  #novo-topico input{   
+   
+      padding:0;
+      margin:0;
+      height: 35px;    
+font-family: Arial;
+font-size: 20px;    
+background-color: white;
+border:1px solid black;
+padding-left:1%;
+      
+  }
+
+
+
+
+.iniciais{
+  
+  
+    padding:0;
+    margin:0;
+      margin-bottom:1%;
+      padding-left: 2%;
+
+    }
+
+#nomee{
+    background-color: cyan;
+    margin-right: 2%;
+}
+#zz {
+  
+    padding:0;
+
+margin-left:2%;
+width: 46%;
+
+}
+
+
+
+
+.botao-cadastrar{
+    background-color:   rgb(49, 37, 4);
+}
+
+.botao-cadastrar:hover{
+    background-color: rgb(134, 80, 10);
+}
+#novo-topico input[type="submit"] {
+     
+    color:rgb(241, 231, 241);
+    background-color: transparent;
+    font-weight: none;
+    border:none;
+    font-size:16px;
+    font-family: sans-serif;
+}
 
 
 
@@ -672,6 +735,10 @@ h3{
 
 /*AREA DE CADASTRO */
 
+
+
+
+/*
 form label{
     display: flex;    
 }
@@ -704,6 +771,11 @@ display: flex;
     margin-bottom:1px;
     margin-top:1px;
 }
+
+*/
+
+
+
 
 
 /* ---- PAGINA AGROTOXICOS-----*/
@@ -786,7 +858,7 @@ text-align: right;
 #meu {
     font-size: 10pt;
     margin-top: 2%;
-    padding-left: 10%;
+    padding-left: 20px;
     color:rgb(58, 44, 7);     
 }
 
@@ -900,6 +972,8 @@ text-align: right;
 
 #listas{
     margin-top:10%;
+    margin-left:8%;
+    margin-right:8%;
 }
 
 #listas a{
