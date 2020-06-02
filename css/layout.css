@@ -77,19 +77,17 @@ section#top nav ul li:nth-child(6){
     color:#4a3a3a;
     font-size: 1.5em;
     margin-left:20%;
-    margin-right:20%;
-    
-   
-   
-    }
+    margin-right:20%;      
+}
 
     
 
 h2{
-    font-family: 'Righteous', cursive;
+    font-family: 'Libre Baskerville', serif;
     letter-spacing: 0.2em;
-    font-size: 3em;
+    font-size: 5em;
     color:#4a3a3a;
+    text-shadow: 2px 2px 5px #135a05;
 }
 
 .foto{
@@ -100,17 +98,18 @@ h2{
  padding-bottom:130px;
 }
 
-
 #conteudo{
-    margin-bottom: 80px;
+    margin-left:7%;
+    margin-right:7%;
 }
 
 #conteudo p{
     font-size: 16px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: auto;
+    text-align: justify;
     margin:0;
-    margin-bottom:50px;
+    text-indent: 2em;
+    
 }
 
 
@@ -123,68 +122,22 @@ h2{
 
 }
 
+#textinho{
+ 
+    margin-left:5%;
+    margin-right:5%;
+}
 
 #textinho p{
     font-size: 12px;
     text-align:auto;
     padding:0;
+    margin:0;
 }
 
 
 
 
-
-
-/*FOOTER*/
-
-#email{
-    width:300px;
-    height: 35px;    
-    font-family: Arial;
-    font-size: 20px;    
-    background-color: white;
-    padding-left:10px;
-    
-}
-
-
-
-div#social ul li {
-	width:32px;
-	height:32px;
-	float:left;
-	margin-right: 15px;
-}
-
-
-div#social ul li a{
-	background:url("../imagens/social.png");
-	display:block;
-	height: 100%;
-    text-indent: -99999em;
-    
-}
-
-div#social ul li:nth-child(1) a{background-position: 0 0;}
-div#social ul li:nth-child(2) a{background-position: -129px 0;}
-
-div#social ul li:nth-child(1) a:hover {background-position: 0 -32px;}
-div#social ul li:nth-child(2) a:hover {background-position: -128px -32px;}
-
-
-#logo-heads{
-    height:60px;
-    
-}
-
-.page-footer{
-    background-color: #264e20;
-    
-    }
-    
-    .page-footer .footer-copyright{
-        background-color: #233421;
-    }
 
 
 #banner{
@@ -197,6 +150,8 @@ div#social ul li:nth-child(2) a:hover {background-position: -128px -32px;}
     margin-top: 7px;
     
 }
+
+
 
 /*Page do produto.html */
 
@@ -366,6 +321,8 @@ section#produto-escolhido{
     padding:10px;
 
 }
+
+
 
 
 /* Page FORUM */
@@ -601,6 +558,8 @@ section#ponto-comercial-escolhido{
 }
 
 
+
+
 /* Page Ponto Comercial */
 
 
@@ -638,6 +597,9 @@ section#ponto-comercial{
 h3{    
     color:#233720;
 }
+
+
+
 
 
 /*AREA DE LOGIN */
@@ -951,5 +913,115 @@ text-align: right;
 
 
 
+
+
+
+
+/*FOOTER*/
+
+#email{
+    width:300px;
+    height: 35px;    
+    font-family: Arial;
+    font-size: 20px;    
+    background-color: white;
+    padding-left:10px;
+    
+}
+
+
+
+div#social ul li {
+	width:32px;
+	height:32px;
+	float:left;
+	margin-right: 15px;
+}
+
+
+div#social ul li a{
+	background:url("../imagens/social.png");
+	display:block;
+	height: 100%;
+    text-indent: -99999em;
+    
+}
+
+div#social ul li:nth-child(1) a{background-position: 0 0;}
+div#social ul li:nth-child(2) a{background-position: -129px 0;}
+
+div#social ul li:nth-child(1) a:hover {background-position: 0 -32px;}
+div#social ul li:nth-child(2) a:hover {background-position: -128px -32px;}
+
+
+#logo-heads{
+    margin-top:0;
+   
+    height:70px;
+ 
+}
+#saiba-mais h5{
+    margin-left:2%;
+    
+}
+
+.page-footer{
+    background-color: #264e20;
+    padding:0;
+    
+    }
+    
+    
+    .page-footer .footer-copyright{
+        
+        background-color: #233421;
+        padding-top: 0%;
+        padding-bottom:0;
+        padding:0;
+    }
+
+#dd{
+  
+    margin-top: 3.3%;
+    padding-bottom:0;
+    margin-left:1%;
+    width: 40%;
+
+    margin-bottom:0;
+}
+
+#logoheads{
+   padding-bottom:0;
+   margin-top: 1%;
+   margin-bottom: 0;
+   padding:0;
+  
+
+}
+
+
+@media screen and (max-width: 940px) {
+    #social {
+        margin-left:16%;
+        padding:0;
+  
+    }
+    #dd{
+        padding-top: 2%;
+
+}
+
+
+
+@media screen and (max-width: 700px) {
+    #social {
+        margin-left:5%;
+    }
+    #dd{
+        padding-top: 5%;
+    }
+#email{
+    width:90%;
+}
 
 
