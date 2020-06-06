@@ -227,32 +227,11 @@
                 </div> <!-- /.input-field -->
                 </div>
             
-                <div class="row">                    
-                <div class="col s6  ">
+                <div class="row">
+                <div style="margin-right:3%;" class="col s12 iniciais ">
                     <input type="text" required id="endereco-input" placeholder="Endereço *">
                 </div> <!-- /.input-field -->
-                <div class="col s2 field " >      
-                    <select name="uf">
-                    <option value="">Estado</option>
-                    </select>
                 </div>
-
-                <div class="col s4 field">
-                    <select name="city" >
-                        <option value="">Cidade</option>
-                    </select>
-                </div>
-                
-                
-                </div>
-                   
-                   
-                   
-                   
-
-
-
-
 
                 <div class="row" >
                     <div id="zz"   class="col s6 iniciais ">
@@ -296,6 +275,74 @@
 
 
 
+
+
+
+
+
+<!----
+
+            <form action="">
+                <div class="row">
+                    <div class="input-field inline col s12 ">
+                        <label for="nome">Nome Completo * </label>
+                        <input type="text"  class="validate"  required pattern="[A-Za-zÀ-ú\s]+$"  required minlength="2" maxlength="20" required id="nome">
+                        <span class="helper-text" data-error="Preenche o nome corretamente"></span>   
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field inline col s6">
+                        <label  for="pontoComercial">Ponto Comercial * </label>
+                        <input type="text" required id="pontoComercial">
+                    </div>
+                    <div class="input-field inline col s6">
+                        <label  for="endereco">Endereço * </label>
+                        <input type="text" required id="endereco">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field  col s6">
+                        <label data-error="Preencha o campo Numero corretamente" for="telephone">Telefone * </label>
+                        <input id="telephone" pattern="[0-9]+$"  type="tel" class="validate">
+                        <span class="helper-text" data-error="Preenche o telefone corretamente"></span>   
+                    </div>
+                    <div class="input-field col s6">
+                        <label data-error="Preencha o campo Numero corretamente" for="icon_cpf">CPF *</label>
+                        <input id="icon_cpf" pattern="[0-9]+$" type="text" required maxlength="11" minlength="11" class="validate">
+                        <span class="helper-text" data-error="Preenche o CPF corretamente"></span>   
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <label for="icon_email">E-mail * </label>
+                        <input id="icon_email" type="email" class="validate">      
+                        <span class="helper-text" data-error="Preenche o e-mail corretamente"></span>              
+                    </div>
+                    <div class="input-field col s6">
+                        <label  for="icon_repetirEmail">Repetir Email *</label>
+                        <input  id="icon_repetirEmail" type="email" class="validate">                        
+                        <span class="helper-text" data-error="Preenche o e-mail corretamente"></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field inline col s6">
+                        <label for="senha">Senha * </label>
+                        <input type="password" id="senha">
+                        
+                    </div>
+                    <div class="input-field inline col s6">
+                        <label for="repetir-password">Repetir Senha * </label>
+                        <input type="password"  id="repetir-password">
+                    </div>
+                </div>
+                <div class="col s12 center">
+                    <a type="submit" id="cadastrar" class="waves-effect waves-light btn">Cadastrar</a>
+                </div>
+            </form-->
         </div>
     </div>
 </div>
@@ -316,8 +363,7 @@
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="js/scriptrenata.js"></script>
-
+	<script src="js/scriptrenata.js"></script>
 
 </body>
 </html>
