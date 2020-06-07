@@ -30,11 +30,24 @@
 
 
 
-//botao cadastrar
- const form = document.getElementById('novo-topico');
-
-form.addEventListener('submit', () => {
- alert("Cadastro realizado com sucesso")
 
 
-})
+
+$(document).ready(function(){
+  $('select').formSelect();
+});
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
