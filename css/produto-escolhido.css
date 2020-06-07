@@ -1,0 +1,47 @@
+
+/* Page produto-escolhido*/
+
+
+
+#nome-produto h3{
+    padding-top: 8%;
+    margin-left: 20%;
+    margin-bottom: 0;
+}
+
+.icon-left{
+    margin-top:55%;
+    font-size:55px;
+    color: #264e20;
+
+}
+
+
+
+
+.perfil-escolhido{
+    margin-bottom: 80px;
+    margin-top:10%;
+    padding:10px;
+
+}
+
+
+.description{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top:1%;
+    color: rgb(73, 55, 15);
+    text-align: justify;
+
+}
+
+.pic-alface{    
+    width:80%;
+    height:100%;
+    margin-top:10%;   
+    margin-left:4%;
+
+}
+
+

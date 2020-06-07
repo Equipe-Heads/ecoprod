@@ -1,0 +1,46 @@
+
+
+
+.foto{
+    height:250px;
+}
+
+#info-organicos{
+ padding-bottom:130px;
+}
+
+#conteudo{
+    margin-left:7%;
+    margin-right:7%;
+}
+
+#conteudo p{
+    font-size: 18px;    
+    text-align: justify;
+    margin:0;
+    text-indent: 2em;
+    
+}
+
+
+.card-content h6{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color:rgb(42, 116, 8);
+    font-size:14px;
+    
+
+}
+
+#textinho{
+ 
+    margin-left:5%;
+    margin-right:5%;
+}
+
+#textinho p{
+    font-size: 12px;
+    text-align:auto;
+    padding:0;
+    margin:0;
+}

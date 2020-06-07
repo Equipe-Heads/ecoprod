@@ -1,4 +1,6 @@
 
+/*MENU E FOOTER*/
+
 
 body{
     background-color: #f6f5f5;
@@ -27,8 +29,8 @@ ul li a{
 
 #dropdown1 li a{
     font-size: 20px;
-    color:rgb(70, 45, 8);
-    background-color: rgb(212, 238, 177);
+    color:rgb(245, 243, 240);
+    background-color: rgb(56, 45, 13);
 }
 
 
@@ -87,7 +89,7 @@ section#top nav ul li:nth-child(6){
 #info h2{
     font-family: 'Libre Baskerville', serif;
     letter-spacing: 0.2em;
-    font-size: 70px;
+    font-size: 50px;
     color:#4a3a3a;
     text-shadow: 2px 2px 5px #135a05;
 }
@@ -97,11 +99,11 @@ section#top nav ul li:nth-child(6){
         font-size: 40px;
         padding-top: 20%;
     }
+        
+    #info p{
+        font-size:15px;
     
-#info p{
-    font-size:15px;
-   
-}
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -113,81 +115,16 @@ section#top nav ul li:nth-child(6){
 }
 
 
+/*BORDAS DE FOLHAS*/
 
-
-.foto{
-    height:250px;
-}
-
-#info-organicos{
- padding-bottom:130px;
-}
-
-#conteudo{
-    margin-left:7%;
-    margin-right:7%;
-}
-
-#conteudo p{
-    font-size: 18px;    
-    text-align: justify;
-    margin:0;
-    text-indent: 2em;
-    
-}
-
-
-.card-content h6{
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color:rgb(42, 116, 8);
-    font-size:14px;
-    
-
-}
-
-#textinho{
- 
-    margin-left:5%;
-    margin-right:5%;
-}
-
-#textinho p{
-    font-size: 12px;
-    text-align:auto;
-    padding:0;
-    margin:0;
-}
-
-
-
-
-
-
-#banner{
-    background-image: url("../imagens/fundo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    margin-bottom:80px;
-    padding:0.2em;
-    margin-top: 7px;
-    
-}
-
-
-
-/*Page do produto.html */
-
-section#page-produtos{
+section#produto-escolhido{
     background-color: white;
-    background-repeat: no-repeat;
-    background-size: cover;
     padding-top: 4%;
     padding-bottom: 4%;
 
 
 }
+
 
 #meio{
     background-image: url("../imagens/folhas.jpg");
@@ -195,36 +132,10 @@ section#page-produtos{
     margin-right:8%;
     padding-bottom:5%;
     background-repeat: no-repeat;
-    background-size: cover;
-    
-    height:100%;
-
-    
+    background-size: cover;    
+    height:100%;    
 }
 
-
-
-.foto-produtos{  
-    margin-bottom: 80px;
-    margin-top:10%;
-    border:2px solid rgb(107, 104, 85);
-    padding:10px;
-}
-
-.alimentos{
-    font-size: 22px;
-    font-weight: bold;
-    margin-top:8%;
-    color: rgb(73, 55, 15);
-
-}
-.pics{
-    width:80%;
-    height:100%;
-    margin-top:9%;   
-    margin-left:4%;
-
-}
 
 
 #box-search{
@@ -270,307 +181,42 @@ section#page-produtos{
 
 .btn{
     background-color: #2e4e06 ;
-   
+    transition: 400ms;
     
     
 }
 
 .btn:hover{
     background-color: rgb(77, 180, 17);
-    transition: 400ms;
-}
-
-.flex-container{
-
-    display: flex;
-    justify-content: center;
-    margin-top:15%;
-
-}
-
-#filter{
-    font-size:20px;
-    color:rgb(15, 90, 15);
-}
-
-#filter:hover{
-    color:rgb(83, 201, 29);
-    font-size: 22px;
+ 
 }
 
 
+#btn-space{
+    margin-left: 20px;
 
-
-/*Botao Radio*/
-
-[type="radio"].with-gap:checked +span:before {
-    border:2px solid rgb(105, 102, 102);
-}
-
-
-
-[type="radio"].with-gap:checked +span:after {
-
-    border:1px solid rgb(13, 114, 9);
-    background-color: rgb(10, 150, 10);
 }
 
 
 
 
 
-/* Page produto-escolhido*/
-
-
-
-section#produto-escolhido{
-    background-color: white;
-    padding-top: 4%;
-    padding-bottom: 4%;
-
-
-}
-
-.icon-left{
-    margin-top:20%;
-    font-size:80px;
-    color:#233720;
-
-}
-
-.perfil-escolhido{
+.foto-produtos{  
     margin-bottom: 80px;
     margin-top:10%;
+    border:2px solid rgb(107, 104, 85);
     padding:10px;
-
 }
 
 
-
-
-/* Page FORUM */
-
-
-#box-search-forum{
-       
-    width: 90%;
-    margin-top:20%;
-    margin-left:0;    
-}
-
-#mais-circle{
-    font-size: 30px;  
-    float:right; 
-    margin-top:2px;  
-}
-
-#mais-circle p{
-  margin-top:2%;
-  font-size:1.3em;  
-}
-
-.botao-novo-topico{   
-    width: 200px;
-    margin-top:19%;
-    margin-right:0px;
-    height:40px;
-}
-
-
-.perguntas{
-    border:1px solid black;
-    height:3%;
-    background-color: rgb(12, 121, 12);
-    margin:0.5%;
-    margin-top:10%;
-
-}
-.perguntas h4{
-    font-size:2em;
-    color:rgb(247, 244, 248);    
-}
-
-
-.usuarios{
-   border:1px solid black;   
-    background-color: rgb(189, 228, 189);
-    margin:5px;              
-}
-
-
-#forum-coments{
-   
-    display:flex;
-    margin-top:10px;
-    padding-right:0;  
-    
-}
-
-.pessoas{  
-    height:55px;   
-}
-
-.icones {
-
-    font-size:50px;
-    border: 1px solid black;
-      float:left;
-      margin-left:5px;   
+.alimentos{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top:8%;
+    color: rgb(73, 55, 15);
 
 }
 
-
-#names{
-    padding-left:70px;
-    font-size:180%;
-  
-}
-
-#comentario-usuarios{
-    float:right;
-    width:30%;
-    display: flex;
-    justify-content: flex-end;
-    margin-top:6px;
-    padding-top:6px;
-
-}
-
-
-
-
-.mensagens{
-    color:green;
-    font-size: 30px;      
-    margin-right: 8px;
-}
-
-#arrow-down{
-    font-size: 30px; 
-    float:right;
-    color:black;
-    padding:0;
-}
-
-
-h6{
-    margin-top:5px;
-    margin-right:5px;
-    
-    
-}
-
-
-
-
-
-
-.botao-novo{
-    float: left;
-    margin-right:9px;
-    margin-left:9px;
-    margin-top:3%;
-    
-
-}
-
-
-.pessoass{
-    height:55px;   
-  
-}
-
-
-
-#maria{
-    
-    width:250px;
-}
-
-
-#nome-usuario{
-    display:flex;
-    justify-content: start;
-    margin-top:10px;
-    
-    width: 180px;
-    margin-left:0;
-
-}
-
-
-#paginacao{
-    margin-bottom:10%;
-}
-
-#modal2{
-    background-color:rgb(165, 218, 165);
-    padding:0;
-}
-
-#novo-topico{
-    margin-top:30px;  
-
-}
-
-
-#assunto,
-#email-msg,
-#name,
-#msg-usuario{
-width:80%;
-height: 35px;    
-font-size: 20px;    
-background-color: white;
-padding-left:1%;
-margin-left:2%;
-
-}
-
-.iniciais{
-    margin-left:3%;
-}
-#text-area{
-    background-color: white;
-    width:380px;
-    height: 100px; 
-    margin-left:30px;
-
-}
-
-#assunto {
-    margin-left:1%;
-}
-
-
-
-div#modal2.modal.open {
-    display: block;
-    opacity: 1;
-    width:450px;
-    height:600px;
-    padding:20px;
-
-    
-
-}
-
-.enviar-arquivo{
-    
-    padding:2px;
-    margin-top:10px;
-    margin-left:40px;
-    margin-right:10px;
-}
-
-.botao-enviar{
-    width:200px;
-}
-
-#modal2 #forum input{
-  
-    margin-left: 4%;
-}
 
 
 /*page ponto comercial escolhido */
@@ -587,40 +233,21 @@ section#ponto-comercial-escolhido{
 
 
 
-
-
-
-
-
-/* Page Ponto Comercial */
-
-
-section#ponto-comercial{
-    background-color:white;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 4%;
-    padding-bottom: 4%;
+#organicMax h3{
+    padding-top: 7%;
+    margin-bottom: 15%;
+  
 }
-
-
-#botao-produto-comercial{
-    margin-top:12%;
-    justify-content: center;
-    
-}
-
-#btn-space{
-    margin-left: 20px;
-
-}
-
 
 .store-pic{
     font-size: 180px;
     margin-top:5%;
     
 }
+
+
+
+
 
 
 /*Page Perfil Ponto Comercial */
@@ -634,382 +261,12 @@ h3{
 
 
 
-/*AREA DE LOGIN */
-#login{
-    width:380px;    
-}
 
-.modal-close{
-    position:absolute;
-    top:10px;
-    right:10px ;
-    margin: 0;
-    padding: 0;
-}
 
-.ic-color, h4, .modal-close {
-    color: rgb(88, 73, 31);
-}
 
-#entrar{
-    margin-top:10%;
-    width: 330px;
-    background-color: rgb(49, 37, 4);
-}
 
-#entrar:hover{
-    background-color: rgb(134, 80, 10);
-}
 
-.modal-content{
-    width: 100%;
-    background-color: rgb(227, 250, 216);
-}
 
-.modal{
-    margin-top:5%;
-}
-
-#check-box{
-    margin-left:80px;
-}
-
-  .input-field label{
-    color: rgb(71, 37, 5);
-  }
-
-  .input-field .prefix.active {
-    color: rgb(173, 113, 33);
-  }
-
-[type="checkbox"].filled-in:checked + span:not(.lever):after {
- 
-    top: 0;   
-    width: 20px;   
-    height: 20px;   
-    border: 2px solid #7e6737;   
-    background-color: #67da0a;   
-    z-index: 0;   
-  }
-
-
-
-
-
-  #novo-topico{
-     
-      padding:0;
-      margin:0;
-  }
-
-  #novo-topico input{   
-   
-      padding:0;
-      margin:0;
-      height: 35px;    
-
-font-size: 16px;    
-background-color: white;
-border:1px solid black;
-padding-left:1%;
-      
-  }
-
-
-
-
-.iniciais{
-  
-  
-    padding:0;
-    margin:0;
-      margin-bottom:1%;
-      padding-left: 2%;
-
-    }
-
-#nomee{
-    background-color: cyan;
-    margin-right: 2%;
-}
-#zz {
-  
-    padding:0;
-
-margin-left:1%;
-width: 46%;
-
-}
-
-
-
-
-.botao-cadastrar{
-    background-color:   rgb(49, 37, 4);
-}
-
-.botao-cadastrar:hover{
-    background-color: rgb(134, 80, 10);
-}
-#novo-topico input[type="submit"] {
-     
-    color:rgb(241, 231, 241);
-    background-color: transparent;
-    font-weight: none;
-    border:none;
-    font-size:16px;
-  
-}
-
-
-
-
-
-/*AREA DE CADASTRO */
-
-
-
-
-/*
-form label{
-    display: flex;    
-}
-
-div#modal1.modal.open {
-    display: block;
-    opacity: 1;  
-}
-
-#cadastrar{
-    background-color:   rgb(49, 37, 4);
-    margin-top:14px;
-    width: 230px;
-}
-
-#cadastrar:hover{
-    background-color: rgb(134, 80, 10);
-}
-
-#modal1{
-display: flex;
-}
-
-#senha, #endereco, #nome, #pontoComercial, #icon_telephone,#icon_cpf, #icon_repetirEmail, #icon_email, #repetir-password{
-    margin-bottom: 1px;
-    margin-top:1px;
-}
-
-.input-field{
-    margin-bottom:1px;
-    margin-top:1px;
-}
-
-*/
-
-
-
-
-
-/* ---- PAGINA AGROTOXICOS-----*/
-
-       
-#mapid { 
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
-    height: 550px;
-    width: 90%;
- }
-    
-#grafico{  
-    margin-bottom:20px;
-}  
-
-
- #entrada{
-    margin-top: 55px;
-    font-size: 15px;
- }
-
-#btnAgro {
-    width: 10.7%;
-    height: 35px;
-    padding: 0;
-    display: inline-block;
-    text-align: center;
-    font-size: 10pt;
-}
-
-.popover {
-    padding: 3px;
-    font-size: 7.5pt;
-    background-color: rgb(197, 228, 184);
-    text-align: left;
-    width: 350px;    
-}
-
-.btnRom {
-    width: 100%;
-    height: 35px;
-    margin-top: 6px;
-    padding: 0;
-    text-align: center;
-    font-size: 7pt;
-    background-color: #2e4e06 ;
-}
-
-#pesquisa-ano{
-    margin-top: 20%;
-    text-align: center;
-    padding-bottom:0;
-    border:1px solid green;
-    margin-bottom: 0;
-}
-
-#pesquisa-ano p,
-#pesquisa-uf p,
-#divs p{
-    margin-bottom: 20px;
-    text-align:center;
-    color:rgb(58, 44, 7);
-}
-
-
-#pesquisa-uf{
-    margin-top: 15%; 
-    text-align: center;
-    border:1px solid green;
-    padding: 10px;
-    text-align: center;
-}
-
-#pesquisa-uf label {
-text-align: right;
-}
-
-#meu {
-    font-size: 10pt;
-    margin-top: 2%;
-    padding-left: 20px;
-    color:rgb(58, 44, 7);     
-}
-
-#meu:hover{
-    font-size:16px;
-    color:green;
-    font-weight: 600;
-}
-#divs{
-    width:150px;    
-    float: left;
-    margin-left:10%;
-    margin-bottom: 10;
-    border:1px solid green;
-    padding:5px;
-}
-
-#divs label{
-    color:rgb(58, 44, 7);
-}
-
-#divs label:hover{
-    font-size:16px;
-    color:green;
-    font-weight: 600;
-}
-
-#circle{
-    width: 50%;
-    height: 50%; 
-    margin-left:10%;
-    float: left;
-    margin-top: 10%;
-    margin-bottom:20px;
-}   
-
-[type="radio"]:checked +span:before {
-    border:2px solid rgb(82, 43, 7);
-    transition: 600ms;
-}
-
-[type="radio"]:checked +span:after {
-    border:1px solid rgb(13, 114, 9);
-    background-color: rgb(10, 150, 10);
-}
-
-.btngreen {
-    background-color: #349727 ;
-    margin-top: 4px;
-}
-
-.btnred {
-    background-color: #d80202 ;
-    margin-top: 4px;    
-}
-
-.btnblue {
-    background-color: #0502c0 ;
-    margin-top: 4px;
-}
-
-.btnyellow {
-    background-color: #f6f317 ;
-    color: black;
-    margin-top: 4px;
-}
-
-.containerRomulo {
-    width: 80%;
-    margin-left: 10%;
-}
-
-.chart-container{
-    position: relative; 
-    height:200px; 
-    width:100%;
-    margin-top:4%;
-}
-
-#tabelas{
-    margin-top: 8%;
-}
-    
-#title{
-    font-size: 2em;
-    letter-spacing: 0.2em;
-    color:rgb(78, 57, 12);
-    margin-bottom:40px;
-    padding-top:10%;
-    font-weight: bold;
-}
-
-#title h5{
-    margin-top: 50%;
-}
-
-#botoes{
-    margin-right:20%;
-    margin-top:3%;
-    margin-bottom: 3%;
-}
-
-#submit{
-    margin-right: 10px;
-}
-
-.fonte{
-    margin-top:10%;
-}
-
-#listas{
-    margin-top:10%;
-    margin-left:8%;
-    margin-right:8%;
-}
-
-#listas a{
-    color:green;
-}
 
 
 
@@ -1067,16 +324,19 @@ div#social ul li:nth-child(2) a:hover {background-position: -128px -32px;}
     margin-left:2%;
     margin-bottom:0;
     font-size:20px;
+    padding: 0;
     
 }
 #social p{
     font-size:20px;
     margin-bottom: 0;
+    padding: 0;
 }
 
 .page-footer{
     background-color: #264e20;
     padding:0;
+    margin: 0;
     
     }
     
@@ -1084,18 +344,16 @@ div#social ul li:nth-child(2) a:hover {background-position: -128px -32px;}
     .page-footer .footer-copyright{
         
         background-color: #233421;
-        padding-top: 0%;
-        padding-bottom:0;
         padding:0;
     }
 
-#dd{
+#criado-por-heads{
   
     margin-top: 2.7%;
     padding-bottom:0;
     margin-left:1%;
     width: 40%;
-
+    font-size: 14px;
     margin-bottom:0;
 }
 

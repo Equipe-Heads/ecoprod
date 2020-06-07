@@ -1,0 +1,237 @@
+
+
+/* Page FORUM */
+
+.nome-forum h2{
+    margin-top: 10%;
+    margin-bottom: 4%;
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: 0.2em;
+    font-size: 4em;
+    color:#4a3a3a;
+    text-shadow: 2px 2px 5px #135a05;
+ 
+}
+
+
+
+#box-search-forum{
+       
+    width: 90%;
+    margin-top:20%;
+    margin-left:0;    
+}
+
+#mais-circle{
+    font-size: 30px;  
+    float:right; 
+    margin-top:2px;  
+}
+
+#mais-circle p{
+  margin-top:2%;
+  font-size:1.3em;  
+}
+
+.botao-novo-topico{   
+    width: 200px;
+    margin-top:19%;
+    margin-right:0px;
+    height:40px;
+}
+
+
+.perguntas{
+    border:1px solid black;
+    height:3%;
+    background-color: #264e20;
+    margin:0.5%;
+    margin-top:10%;
+
+}
+.perguntas h4{
+    font-size:2em;
+    color:rgb(247, 244, 248);    
+}
+
+
+.usuarios{
+   border:1px solid black;   
+    background-color: rgb(189, 228, 189);
+    margin:5px;              
+}
+
+
+#forum-coments{
+   
+    display:flex;
+    margin-top:10px;
+    padding-right:0;  
+    
+}
+
+.pessoas{  
+    height:55px;   
+}
+
+.icones {
+
+    font-size:50px;
+    border: 1px solid black;
+      float:left;
+      margin-left:5px;   
+
+}
+
+
+#names{
+    padding-left:70px;
+    font-size:180%;
+  
+}
+
+#comentario-usuarios{
+    float:right;
+    width:30%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top:6px;
+    padding-top:6px;
+
+}
+
+
+
+
+.mensagens{
+    color:green;
+    font-size: 30px;      
+    margin-right: 8px;
+}
+
+#arrow-down{
+    font-size: 30px; 
+    float:right;
+    color:black;
+    padding:0;
+}
+
+
+h6{
+    margin-top:5px;
+    margin-right:5px;
+}
+
+
+.botao-novo{
+    float: left;
+    margin-right:9px;
+    margin-left:9px;
+    margin-top:3%;
+}
+
+
+.pessoass{
+    height:55px;   
+  
+}
+
+
+
+#maria{
+    width:250px;
+}
+
+
+#nome-usuario{
+    display:flex;
+    justify-content: start;
+    margin-top:10px;
+    
+    width: 180px;
+    margin-left:0;
+
+}
+
+
+#paginacao{
+    margin-bottom:10%;
+}
+
+
+
+
+
+
+div#modal2.modal.open {
+    display: block;
+    opacity: 1;
+    width:500px;
+    height:800px;
+    padding:0px;
+    background-color: #f0f0f5;   
+    
+}
+
+
+
+.modal-close{
+    position:absolute;
+    top:10px;
+    right:10px ;
+    margin: 0;
+    padding: 0;
+}
+
+
+#novo-topico{
+    margin-top:20px;  
+
+}
+
+
+#assunto,
+#email-msg,
+#name,
+#msg-usuario{
+width:80%;
+height: 35px;    
+font-size: 20px;    
+background-color: white;
+padding-left:1%;
+
+
+}
+
+#text-area{
+    background-color: white;
+    width:400px;
+    height: 80px; 
+   
+
+}
+
+#assunto {
+    margin-left:1%;
+}
+
+
+
+
+.enviar-arquivo{
+    
+    padding-left:2px;
+    margin-top:5px;
+    margin-left:20px;
+    margin-right:10px;
+}
+
+.botao-enviar{
+    width:200px;
+   
+}
+
+#modal2 #forum input{
+  
+    margin-left: 4%;
+}

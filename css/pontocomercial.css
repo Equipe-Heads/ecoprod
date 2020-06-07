@@ -1,0 +1,211 @@
+
+/* Page Ponto Comercial */
+
+
+section#ponto-comercial{
+    background-color:white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+
+#botao-produto-comercial{
+    margin-top:12%;
+    justify-content: center;
+    
+}
+
+#organicMax h3{
+    padding-top: 8%;
+    margin-left: 20%;
+    margin-bottom: 0;
+}
+
+.icon-left{
+    margin-top:55%;
+    font-size:55px;
+    color: #264e20;
+
+}
+
+
+
+
+
+
+
+/*AREA DE LOGIN */
+
+
+div#login.modal.open {
+    display: block;
+    opacity: 1;
+    width:450px;
+    height:410px;
+    padding:0px;
+
+    
+
+}
+
+
+#login{
+    width:380px;    
+}
+
+.modal-close{
+    position:absolute;
+    top:10px;
+    right:10px ;
+    margin: 0;
+    padding: 0;
+}
+
+.ic-color, h4, .modal-close {
+    color: rgb(88, 73, 31);
+}
+
+#entrar{
+    margin-top:10%;
+    width: 330px;
+   
+}
+
+
+.modal-content{
+    width: 100%;
+    background-color: #f0f0f5;
+}
+
+.modal{
+    margin-top:5%;
+}
+
+#check-box{
+    margin-left:110px;
+}
+
+  .input-field label{
+    color: rgb(71, 37, 5);
+  }
+
+  .input-field .prefix.active {
+    color: rgb(77, 180, 17);
+  }
+
+[type="checkbox"].filled-in:checked + span:not(.lever):after {
+ 
+    top: 0;   
+    width: 20px;   
+    height: 20px;   
+    border: 2px solid #7e6737;   
+    background-color: #67da0a;   
+    z-index: 0;   
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+/*AREA DE CADASTRO */
+
+
+
+
+::placeholder{
+    color:rgb(53, 73, 57);
+}
+
+
+#cadastro{    
+    padding:0;
+    margin:0;
+
+}
+
+
+  #cadastro input{   
+   
+      padding:0;
+      margin:0;
+      height: 35px;    
+
+    font-size: 16px;    
+    background-color:#f0f0f5;
+    border:0;
+    padding-left:1%;
+      
+  }
+
+#modal1 form ::placeholder{
+    color:rgb(22, 17, 17);
+}
+  
+
+
+.iniciais{
+  
+  
+    padding:0;
+    margin:0;
+      margin-bottom:1%;
+      padding-left: 2%;
+
+    }
+
+#nomee{
+   
+    margin-right: 2%;
+}
+#zz {
+  
+    padding:0;
+
+margin-left:1%;
+width: 46%;
+
+}
+
+
+.botao-cadastrar{
+    background-color:   rgb(49, 37, 4);
+}
+
+.botao-cadastrar:hover{
+    background-color: rgb(134, 80, 10);
+}
+#cadastro input[type="submit"] {
+     
+    color:rgb(241, 231, 241);
+    background-color: transparent;
+    font-weight: none;
+    border:none;
+    font-size:16px;
+  
+}
+
+
+
