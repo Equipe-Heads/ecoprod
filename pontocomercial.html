@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/layout.css">
-   
+    <link rel="stylesheet" href="css/pontocomercial.css">
     <title>Projeto Ecoprod</title>
 </head>
 
@@ -26,7 +26,7 @@
                         <li class="waves-effect waves-green"><a href="mapa_interativo.html">Local</a></li>
                         <li class="waves-effect waves-green"><a href="forum.html">Fórum</a></li>
                         <li class="waves-effect waves-green"><a href="pontocomercial.html">Ponto Comercial</a></li>
-                        <li class="waves-effect waves-green"><a href="#">HEADS</a></li>
+                        <li class="waves-effect waves-green"><a href="heads.html">HEADS</a></li>
                         <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dados<i class="material-icons right">arrow_drop_down</i></a></li>
                     </ul>        
                   </div><!--col-->
@@ -64,7 +64,7 @@
                             </div><!--col-->                        
                         </div><!--col-->
                         <div id="botao-produto-comercial" class="col s12 l6 center">
-                            <a href="#modal1" class="waves-effect waves-light btn botao modal-trigger">Cadastre-se</a>
+                            <a href="cadastro.html" class="waves-effect waves-light btn botao ">Cadastre-se</a>
                             <a href="#login" id="btn-space" class="waves-effect waves-light btn botao modal-trigger ">Entrar </a>
                         </div><!--col-->
                     </div><!--row-->
@@ -77,10 +77,10 @@
                             <i class="material-icons store-pic">store</i>                            
                         </div>
                         <div class="col s12 l6">
-                            <p class="alimentos">Nome do Comércio</p>
-                            <p class="alimentos">Descrição Breve</p>
-                            <p class="alimentos">Vendedor (Ponto Comercial)</p>       
-                            <div class="right">       
+                            <p class="alimentos">Organic Max</p>
+                            <p class="alimentos">Rua XXXXXXXX - Recife-PE</p>
+                            <p class="alimentos">Produtos: Alface - Repolho - Brócolis...</p>       
+                            <div class="right">        
                             <a href="pontocomercialescolhido.html" class="waves-effect waves-light btn botao">Acessar Perfil</a>
                             </div>
                             
@@ -96,10 +96,10 @@
                             <i class="material-icons store-pic">store</i>                            
                         </div>
                         <div class="col s12 l6">
-                            <p class="alimentos">Nome do Comércio</p>
-                            <p class="alimentos">Descrição Breve</p>
-                            <p class="alimentos">Vendedor (Ponto Comercial)</p>      
-                            <div class="right">       
+                            <p class="alimentos">Minus Max</p>
+                            <p class="alimentos">Rua XXXXXXXX - Recife-PE</p>
+                            <p class="alimentos">Produtos: Cebola - Laranja - Maçã...</p>      
+                            <div class="right">          
                                 <a href="pontocomercialescolhido.html" class="waves-effect waves-light btn botao">Acessar Perfil</a>
                             </div>                    
                         </div><!--col-->                        
@@ -114,10 +114,10 @@
                             <i class="material-icons store-pic">store</i>                            
                         </div>
                         <div class="col s12 l6">
-                            <p class="alimentos">Nome do Comércio</p>
-                            <p class="alimentos">Descrição Breve</p>
-                            <p class="alimentos">Vendedor (Ponto Comercial)</p>                      
-                            <div class="right">       
+                            <p class="alimentos">Organic Tops</p>
+                            <p class="alimentos">Rua XXXXXXXX - Recife-PE</p>
+                            <p class="alimentos">Produtos: Frango - Pimentão - Tomate...</p>                       
+                            <div class="right">        
                                 <a href="pontocomercialescolhido.html" class="waves-effect waves-light btn botao">Acessar Perfil</a>
                             </div>
     
@@ -136,7 +136,7 @@
       <div class="row">
         <div id="saiba-mais" class="col s12 m6 l6">
           <header>
-            <h5>SAIBA MAIS</h5>
+            <p>SAIBA MAIS</p>
           </header>
           <div class="input-field col s12 m12">
             <input type="text" id="email" placeholder="E-mail" class="validate">
@@ -144,7 +144,7 @@
         </div> <!-- /.col -->
         <div id="social" class="col s12 m4 l4 offset-l2">
           <header>
-            <h5>REDES SOCIAIS</h5>
+            <p>REDES SOCIAIS</p>
           </header>
           <ul>
             <li><a href="#">Facebook</a></li>
@@ -156,7 +156,7 @@
     <div class="footer-copyright">
       <div class="container">
         <div class="row">
-          <div id="dd" class="col s6">
+          <div id="criado-por-heads" class="col s6">
             CRIADO POR HEADS
           </div>
           <div id="logoheads" class=" right col s6">
@@ -183,18 +183,18 @@
                 <input type="email" id="usuario"  class="validate">
                 <span class="helper-text" data-error="Preenche o e-mail corretamente"></span>
               
-            </div><br>
+            </div>
 
-            <div class="input-field">
+            <div class="input-field" >
                 <i class="material-icons prefix ic-color">lock</i>
                 <label for="password">Password</label>
                 <input type="password" id="password">               
-            </div><br>
+            </div>
 
             <div id="check-box" class="input-field">
                 <label>
                     <input type="checkbox" class="filled-in" />
-                    <span>Lembrar meu usuario</span>
+                    <span>Lembrar meu Usuário</span>
                 </label><br>
             </div>
 
@@ -206,145 +206,6 @@
 
 
 
-<!--FORMULARIO CADASTRO-->
-
-<div >
-    <div class="modal" id="modal1">
-        <h5 class="modal-close">&#10005;</h5>
-        <div class="modal-content">
-            <h4 class="center">Formulário de Cadastro</h4>
-            <form action="" method="post" id="novo-topico" class="center">
-                <div class="row">
-                <div style="margin-right:3%;" class="col s12 iniciais ">
-                    <input type="text"  placeholder="Nome Completo *" class="validate"  required pattern="[A-Za-zÀ-ú\s]+$"  required minlength="2" maxlength="20" required id="nome">
-                        <span class="helper-text" data-error="Preenche o nome corretamente"></span>   
-                </div>
-                </div> <!-- /.input-field -->
-            
-                <div class="row">
-                <div style="margin-right:3%;"  class="col s12 iniciais ">
-                    <input type="text" required id="ponto-comercial-input" placeholder="Ponto Comercial *">
-                </div> <!-- /.input-field -->
-                </div>
-            
-                <div class="row">
-                <div style="margin-right:3%;" class="col s12 iniciais ">
-                    <input type="text" required id="endereco-input" placeholder="Endereço *">
-                </div> <!-- /.input-field -->
-                </div>
-
-                <div class="row" >
-                    <div id="zz"   class="col s6 iniciais ">
-                        <input id="telefone-input" pattern="[0-9]+$"  type="tel" class="validate" placeholder="Telefone *">
-                        <span class="helper-text" data-error="Preenche o telefone corretamente"></span>  
-                    </div>
-                    <div id="zz" style="margin-left:6%;"class="col s6  ">                
-                        <input id="cpf-input" pattern="[0-9]+$" type="text" required maxlength="11" minlength="11" class="validate" placeholder="CPF *">
-                        <span class="helper-text" data-error="Preenche o CPF corretamente"></span>  
-                    </div> <!-- /.input-field -->
-                </div>
-            
-            
-                <div class="row" id="emails" >
-                    <div  id="zz" class="col s6 iniciais " >
-                        <input type="email" required id="email-input" class="validate" placeholder="Email *">
-                        <span class="helper-text" data-error="Preenche o e-mail corretamente"></span> 
-                    </div> <!-- /.input-field -->            
-                    <div id="zz" style="margin-left:6%;" class="col s6 iniciais ">
-                        <input type="email" required id="Repetir-email-input" class="validate" placeholder="Repetir Email *">
-                        <span class="helper-text" data-error="Preenche o e-mail corretamente"></span> 
-                    </div> <!-- /.input-field -->
-                </div>
-            
-                <div class="row"  style="margin-bottom:1%;"  id="senhas"  >
-                    <div id="zz" class="col s6 iniciais ">
-                        <input type="password" required id="senha-input" placeholder="Senha *">
-                    </div>            
-                    <div id="zz" style="margin-left:6%;" class="col s6 iniciais ">
-                        <input type="password" required id="repetir-senha-input" placeholder="Repetir Senha *">
-                    </div>
-                </div>
-
-                    <div class="col s12 center">
-                        <input type="submit" value="Cadastrar" class="waves-effect waves-light btn botao-cadastrar">
-                    </div>
-            </form>
-        </div>
-        
-
-
-
-
-
-
-
-
-
-<!----
-
-            <form action="">
-                <div class="row">
-                    <div class="input-field inline col s12 ">
-                        <label for="nome">Nome Completo * </label>
-                        <input type="text"  class="validate"  required pattern="[A-Za-zÀ-ú\s]+$"  required minlength="2" maxlength="20" required id="nome">
-                        <span class="helper-text" data-error="Preenche o nome corretamente"></span>   
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="input-field inline col s6">
-                        <label  for="pontoComercial">Ponto Comercial * </label>
-                        <input type="text" required id="pontoComercial">
-                    </div>
-                    <div class="input-field inline col s6">
-                        <label  for="endereco">Endereço * </label>
-                        <input type="text" required id="endereco">
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="input-field  col s6">
-                        <label data-error="Preencha o campo Numero corretamente" for="telephone">Telefone * </label>
-                        <input id="telephone" pattern="[0-9]+$"  type="tel" class="validate">
-                        <span class="helper-text" data-error="Preenche o telefone corretamente"></span>   
-                    </div>
-                    <div class="input-field col s6">
-                        <label data-error="Preencha o campo Numero corretamente" for="icon_cpf">CPF *</label>
-                        <input id="icon_cpf" pattern="[0-9]+$" type="text" required maxlength="11" minlength="11" class="validate">
-                        <span class="helper-text" data-error="Preenche o CPF corretamente"></span>   
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="input-field col s6">
-                        <label for="icon_email">E-mail * </label>
-                        <input id="icon_email" type="email" class="validate">      
-                        <span class="helper-text" data-error="Preenche o e-mail corretamente"></span>              
-                    </div>
-                    <div class="input-field col s6">
-                        <label  for="icon_repetirEmail">Repetir Email *</label>
-                        <input  id="icon_repetirEmail" type="email" class="validate">                        
-                        <span class="helper-text" data-error="Preenche o e-mail corretamente"></span>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="input-field inline col s6">
-                        <label for="senha">Senha * </label>
-                        <input type="password" id="senha">
-                        
-                    </div>
-                    <div class="input-field inline col s6">
-                        <label for="repetir-password">Repetir Senha * </label>
-                        <input type="password"  id="repetir-password">
-                    </div>
-                </div>
-                <div class="col s12 center">
-                    <a type="submit" id="cadastrar" class="waves-effect waves-light btn">Cadastrar</a>
-                </div>
-            </form-->
-        </div>
-    </div>
 </div>
 
 

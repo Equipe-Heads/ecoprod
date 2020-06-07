@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/layout.css">
-
+    <link rel="stylesheet" href="css/produto-escolhido.css">
     
       <title>Projeto Ecoprod</title>
 </head>
@@ -27,7 +27,7 @@
                         <li class="waves-effect waves-green"><a href="mapa_interativo.html">Local</a></li>
                         <li class="waves-effect waves-green"><a href="forum.html">Fórum</a></li>
                         <li class="waves-effect waves-green"><a href="pontocomercial.html">Ponto Comercial</a></li>
-                        <li class="waves-effect waves-green"><a href="#">HEADS</a></li>
+                        <li class="waves-effect waves-green"><a href="heads.html">HEADS</a></li>
                         <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dados<i class="material-icons right">arrow_drop_down</i></a></li>
                     </ul>        
                 </div><!--col-->
@@ -53,12 +53,12 @@
         <!--Botao de Busca-->     
              <div id="meio" class="z-depth-4">
                  <div class="container">
-                    <div class="row">
+                    <div class="row" id="nome-topo">
                         <div class="col s3 l3 left">                                                            
                                 <a href="produto.html"><i class="material-icons icon-left">chevron_left</i></a>
                         </div>
-                        <div class="col s6 l9">
-                            <h3>Nome do Produto Escolhido</h3>
+                        <div id="nome-produto" class="col s6 l9">
+                          <h3>Alface</h3>
                         </div><!--col-->                                                 
                     </div><!--row-->
                  </div><!--container-->
@@ -67,14 +67,20 @@
             <div>
                 <div class="row">
                     <div class="col s12 l6 center ">
-                        <img src="imagens/alface.jpg" alt="" class="pics">
+                        <img src="imagens/alface.jpg" alt="" class="pic-alface">
                     </div>
-                    <div class="col s12 l6">
-                        <p class="alimentos">Alface</p>
-                        <p class="alimentos">Descrição Breve</p>
-                        <p class="alimentos">Vendedor (Ponto Comercial)</p>
-                        <p class="alimentos">R$</p>                      
-                    </div><!--col-->                        
+                    <div style="text-indent: 1.5em;" class="description col s12 l6">
+                      <p class="">Esta hortaliça é boa fonte de vitaminas e sais minerais, destacando-se a vitamina A,
+                        indispensável para a saúde dos olhos, da pele e dos dentes. </p>
+                      <p> É produzida nos cinturões verdes dos grandes centros consumidores, constituindo-se para muitos produtores ótima
+                        fonte de renda e retorno rápido do investimento.</p>
+                      <p> Por ser consumida crua, na forma de salada e apresentar rápido ciclo vegetativo (30 a 45 dias),
+                        o cultivo orgânico de alface é essencial para garantir a saúde do agricultor, do consumidor e, também preservar o
+                        meio ambiente.</p>
+                      <p>Vendedor: Organic Max</p>
+                      <p>R$ 3.00</p>
+                    </div>
+                    <!--col-->
                 </div><!--row-->        
             </div><!--div-->
         </div><!--perfil-escolhido-->     
@@ -89,7 +95,7 @@
       <div class="row">
         <div id="saiba-mais" class="col s12 m6 l6">
           <header>
-            <h5>SAIBA MAIS</h5>
+            <p>SAIBA MAIS</p>
           </header>
           <div class="input-field col s12 m12">
             <input type="text" id="email" placeholder="E-mail" class="validate">
@@ -97,7 +103,7 @@
         </div> <!-- /.col -->
         <div id="social" class="col s12 m4 l4 offset-l2">
           <header>
-            <h5>REDES SOCIAIS</h5>
+            <p>REDES SOCIAIS</p>
           </header>
           <ul>
             <li><a href="#">Facebook</a></li>
@@ -109,7 +115,7 @@
     <div class="footer-copyright">
       <div class="container">
         <div class="row">
-          <div id="dd" class="col s6">
+          <div id="criado-por-heads" class="col s6">
             CRIADO POR HEADS
           </div>
           <div id="logoheads" class=" right col s6">

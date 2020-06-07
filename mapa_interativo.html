@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/layout.css">
-
+  <link rel="stylesheet" href="css/agrotoxicos.css">
 
   <!--Template based on URL below
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
@@ -50,7 +50,7 @@
                     <li class="waves-effect waves-green"><a href="#">Local</a></li>
                     <li class="waves-effect waves-green"><a href="forum.html">Fórum</a></li>
                     <li class="waves-effect waves-green"><a href="pontocomercial.html">Ponto Comercial</a></li>
-                    <li class="waves-effect waves-green"><a href="#">HEADS</a></li>
+                    <li class="waves-effect waves-green"><a href="heads.html">HEADS</a></li>
                     <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dados<i class="material-icons right">arrow_drop_down</i></a></li>
                 </ul>        
             </div><!--col-->
@@ -76,31 +76,23 @@
   <section id="produto-escolhido">
      
     <!--Botao de Busca-->     
-         <div id="meio" class="z-depth-4">
-           
-                
-
-
+    <div id="meio" style="margin-top: 4%; margin-bottom: 4%;" class="z-depth-4">
+              
+                    
     <main role="main">
-
-
-
-      
       <div class="right" id="botoes">
         <button id="submit" onclick="getRota(); return;" class="btn btn-secondary my-2 my-sm-0">Gerar Rota</button>
         <button id="die" onclick="apagaRota(); return;" class="btn btn-secondary my-2 my-sm-0">Apagar Rota</button>
       </div>
-      <div id="mapid" class="twelve columns"></div>
-
-
+      <div id="mapid" class="twelve columns">    
+      </div>
     </main><!-- /.container -->
-    <script src="js/p5.min.js"></script>
-    <script src="js/ecoprod_map.js"></script>
 
-  </section>
+        <script src="js/p5.min.js"></script>
+        <script src="js/ecoprod_map.js"></script>
 
   
-</div><!--meio-->
+    </div><!--meio-->
 </section>
 
 
@@ -111,7 +103,7 @@
     <div class="row">
       <div id="saiba-mais" class="col s12 m6 l6">
         <header>
-          <h5>SAIBA MAIS</h5>
+          <p>SAIBA MAIS</p>
         </header>
         <div class="input-field col s12 m12">
           <input type="text" id="email" placeholder="E-mail" class="validate">
@@ -119,7 +111,7 @@
       </div> <!-- /.col -->
       <div id="social" class="col s12 m4 l4 offset-l2">
         <header>
-          <h5>REDES SOCIAIS</h5>
+          <p>REDES SOCIAIS</p>
         </header>
         <ul>
           <li><a href="#">Facebook</a></li>
@@ -131,7 +123,7 @@
   <div class="footer-copyright">
     <div class="container">
       <div class="row">
-        <div id="dd" class="col s6">
+        <div id="criado-por-heads" class="col s6">
           CRIADO POR HEADS
         </div>
         <div id="logoheads" class=" right col s6">
