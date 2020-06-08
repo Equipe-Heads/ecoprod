@@ -54,12 +54,68 @@ document
 
 
 //botao cadastrar
-const form = document.getElementById('cadastro');
-
-form.addEventListener('submit', () => {
- alert("Cadastro realizado com sucesso")
 
 
-})
+function validar_form_contato(){
+var name = formcontato.name.value;
+var pontocomercial = formcontato.pontocomercial.value;
+var address = formcontato.address.value;
+    var telefone = formcontato.telefone.value;
+    var cpf = formcontato.cpf.value;
+var email = formcontato.email.value;
+var repetiremail = formcontato.repetiremail.value;
+var senha = formcontato.senha.value;
+var repetirsenha = formcontato.repetirsenha.value;
 
+if(name == ""){
+alert("Campo nome é obrigatório");
+formcontato.nome.focus();
+return false;
+}   if(pontocomercial == ""){
+alert("Campo Ponto Comercial é obrigatório");
+formcontato.nome.focus();
+return false;
+} 
+if(address == ""){
+alert("Campo Endereço é obrigatório");
+formcontato.nome.focus();
+return false;
+}if(telefone == ""){
+alert("Campo telefone é obrigatório");
+formcontato.email.focus();
+return false;
+}if(cpf == ""){
+alert("Campo cpf é obrigatório");
+formcontato.assunto.focus();
+return false;
+}if(email == ""){
+alert("Campo email é obrigatório");
+formcontato.mensagem.focus();
+return false;
+}if(repetiremail == ""){
+alert("Campo Repetir Email é obrigatório");
+formcontato.mensagem.focus();
+return false;
+}if(senha == ""){
+alert("Campo Senha é obrigatório");
+formcontato.mensagem.focus();
+return false;
+}if(repetirsenha == ""){
+alert("Campo Repetir Senha é obrigatório");
+formcontato.mensagem.focus();
+return false;
+}if(email!=repetiremail){
+alert("Os emails não estão iguais");
+formcontato.mensagem.focus();
+return false;
+}  
+if(senha!=repetirsenha){
+alert("As senhas não estão iguais");
+formcontato.mensagem.focus();
+return false;
+}
+else{
+alert("Cadastro Concluído com Sucesso");
+}      
+}
 
