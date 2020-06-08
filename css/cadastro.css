@@ -115,4 +115,9 @@ form{
     width:100%;
 }
 
+
+#cadastro input {
+    height: 15px;
+
+}
 }
