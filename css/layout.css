@@ -138,6 +138,8 @@ section#produto-escolhido{
 
 
 
+/*CAMPOS DE PESQUISA*/
+
 #box-search{
        
     width: 90%;
@@ -239,13 +241,12 @@ section#ponto-comercial-escolhido{
   
 }
 
-.store-pic{
-    font-size: 180px;
-    margin-top:5%;
-    
+
+.picponto-comercial{
+  margin-top:5%;
+width: 70%;
+
 }
-
-
 
 
 
@@ -260,12 +261,73 @@ h3{
 
 
 
+#ppc{
+    margin-top: 20%;
+    padding: 0;
+    margin-right: 0%;
+    margin-left: 60%;
+    display: flex;
+    flex: 1;
+}
 
 
 
+.pic-ponto-comercial{
+    width:80%;
+    height:100%;
+    margin-top:40%;   
+    margin-left:4%;
+    margin-bottom: 5%;
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .pic-ponto-comercial{
+        margin-top:20%;   
+    }
+
+
+}
 
 
 
+/*CERTIFICADO*/
+
+
+#certificado h3{
+    padding-top: 8%;
+    margin-left: 10%;
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+.icon-left{
+    margin-top:55%;
+    font-size:55px;
+    color: #264e20;
+
+}
+
+
+
+.pic-certificado{
+    width:100%;
+    margin-top:9%;   
+    
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+    #certificado h3{
+        padding-top: 14%;
+    }
+
+}
 
 
 

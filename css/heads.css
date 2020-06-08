@@ -39,8 +39,8 @@
 
 #conteudo-heads{
     padding-bottom:130px;
-    margin-left:10%;
-    margin-right: 10%;
+    margin-left:5%;
+    margin-right: 5%;
 }
 
 #conteudo-heads h3{
@@ -55,11 +55,12 @@
 }
 
 #equipe-heads img{
-    max-width:300px;
+    max-width: 50%;
     max-height:250px;
     width: 270px;
     height: auto;
-    margin-right: 7%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 #equipe-heads p{

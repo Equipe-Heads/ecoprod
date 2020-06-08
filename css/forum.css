@@ -175,6 +175,17 @@ div#modal2.modal.open {
 
 
 
+@media screen and (max-width: 800px) {
+
+    div#modal2.modal.open {
+        width:100%;    
+    }
+
+}
+
+
+
+
 .modal-close{
     position:absolute;
     top:10px;
@@ -205,7 +216,7 @@ padding-left:1%;
 
 #text-area{
     background-color: white;
-    width:400px;
+    width:90%;
     height: 80px; 
    
 

@@ -20,7 +20,7 @@ section#ponto-comercial{
 #organicMax h3{
     padding-top: 8%;
     margin-left: 20%;
-    margin-bottom: 0;
+    margin-bottom: 0%;
 }
 
 .icon-left{
@@ -31,7 +31,10 @@ section#ponto-comercial{
 }
 
 
-
+.store-pic{
+    font-size: 180px;
+    margin-top: 5%;
+}
 
 
 
@@ -45,10 +48,24 @@ div#login.modal.open {
     width:450px;
     height:410px;
     padding:0px;
-
+  background-color: #f0f0f5;
     
 
 }
+
+
+
+
+@media screen and (max-width: 800px) {
+
+
+    div#login.modal.open{
+    width:100%;    
+}
+
+}
+
+
 
 
 #login{
@@ -76,7 +93,7 @@ div#login.modal.open {
 
 .modal-content{
     width: 100%;
-    background-color: #f0f0f5;
+  
 }
 
 .modal{
