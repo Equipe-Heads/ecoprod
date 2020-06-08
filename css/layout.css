@@ -297,14 +297,15 @@ h3{
 
 
 #certificado h3{
-    padding-top: 8%;
-    margin-left: 10%;
+ 
     margin-bottom: 0;
     font-size: 40px;
+    text-align: center;
+ 
 }
 
 .icon-left{
-    margin-top:55%;
+    margin-top:110%;
     font-size:55px;
     color: #264e20;
 
@@ -320,14 +321,57 @@ h3{
 }
 
 
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
 
     #certificado h3{
-        padding-top: 14%;
+        padding-top: 15%;
+        margin-left: 0%;
+      
     }
 
 }
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+    #certificado h3{
+        padding-top: 40%;
+        margin-left: 0%;
+        font-size: 30px;
+    }
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 300px) {
+
+    #certificado h3{
+        padding-top: 20%;
+       
+        font-size: 20px;
+    }
+
+
+.icon-left{
+    margin-top:55%;
+    font-size:55px;
+    color: #264e20;
+
+}
+
+}
+
+
+
+
 
 
 
