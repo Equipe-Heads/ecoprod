@@ -11,165 +11,150 @@
     <link rel="stylesheet" href="css/cadastro.css">
   
 
-    <title>EcoProd</title>
+    <title>Cadastro - EcoProd</title>
 </head>
 
 
 
 <body>  
     <section id="top">
-        <div class="navbar-fixed nav-wrapper ">
-            <nav>                 
-              <div class="col s8 m3 ">
-                  <a href="index.html"><img class="logo left" src=imagens/ecoprod.png></a>      
-                </div><!--col-->
-                <div class="col s3 m7 right ">
-                  <a href="#" data-target="mobile-demo" class="sidenav-trigger "><i class="material-icons icon-color right">menu</i></a>
-                  <ul class="hide-on-med-and-down right">           
-                      <li class="waves-effect waves-green"><a href="produto.html">Produtos</a></li>
-                      <li class="waves-effect waves-green"><a href="mapa_interativo.html">Local</a></li>
-                      <li class="waves-effect waves-green"><a href="forum.html">Fórum</a></li>
-                      <li class="waves-effect waves-green"><a href="pontocomercial.html">Ponto Comercial</a></li>
-                      <li class="waves-effect waves-green"><a href="heads.html">HEADS</a></li>
-                      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dados<i class="material-icons right">arrow_drop_down</i></a></li>
-                  </ul>        
-                </div><!--col-->
-            </nav>            
-        </div><!--nav-wrapper-->
-        <div>
+      <div class="navbar-fixed nav-wrapper ">
+        <nav>
+          <div class="col s8 m3 ">
+            <a href="index.html"><img class="logo left" src=imagens/ecoprod.png></a>
+          </div>          <!--col-->
+          <div class="col s3 m7 right ">
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger "><i class="material-icons icon-color right">menu</i></a>
+            <ul class="hide-on-med-and-down right">
+              <li class="waves-effect waves-green"><a href="produto.html">Produtos</a></li>
+              <li class="waves-effect waves-green"><a href="mapa_interativo.html">Local</a></li>
+              <li class="waves-effect waves-green"><a href="forum.html">Fórum</a></li>
+              <li class="waves-effect waves-green"><a href="pontocomercial.html">Ponto Comercial</a></li>
+              <li class="waves-effect waves-green"><a href="heads.html">HEADS</a></li>
+              <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dados<i
+                    class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+          </div>          <!--col-->
+        </nav>
+      </div>      <!--nav-wrapper-->
+      <div>
         <ul id="dropdown1" class="dropdown-content ">
-          <li><a href="Agrotoxicos.html">Agrotóxicos</a></li>         
+          <li><a href="Agrotoxicos.html">Agrotóxicos</a></li>
         </ul>
-</div>
-                  <ul class="sidenav center" id="mobile-demo">
-                      <li><a href="produto.html">Produtos</a></li>
-                      <li><a href="mapa_interativo.html">Local</a></li>
-                      <li><a href="forum.html">Fórum</a></li>
-                      <li><a href="pontocomercial.html">Ponto Comercial</a></li>
-                      <li><a href="heads.html">HEADS</a></li>
-                  </ul>            
+      </div>
+      <ul class="sidenav center" id="mobile-demo">
+        <li><a href="produto.html">Produtos</a></li>
+        <li><a href="mapa_interativo.html">Local</a></li>
+        <li><a href="forum.html">Fórum</a></li>
+        <li><a href="pontocomercial.html">Ponto Comercial</a></li>
+        <li><a href="heads.html">HEADS</a></li>
+      </ul>
     </section>
 
          
+<section id="produto-escolhido">
 
-    <section id="produto-escolhido">
-     
-        <!--Botao de Busca-->     
-        <div id="meio" class="z-depth-4">
-            <div class="container">
-               <div class="row">
-                   <div class="col s3 l3 left">                                                            
-                           <a href="pontocomercial.html"><i class="material-icons icon-left">chevron_left</i></a>
-                   </div>
-                   <div id="organicMax" class="col s6 l9">
-                       <h3>Cadastro</h3>
-                   </div><!--col-->                                                 
-               </div><!--row-->
-            </div><!--container-->
+  <!--Botao de Busca-->
+  <div id="meio" class="z-depth-4">
+    <div class="container">
+      <div class="row">
+        <div class="col s3 l3 left">
+          <a href="pontocomercial.html"><i class="material-icons icon-left">chevron_left</i></a>
+        </div>
+        <div id="organicMax" class="col s6 l9">
+          <h3>Cadastro</h3>
+        </div>
+        <!--col-->
+      </div>
+      <!--row-->
+    </div>
+    <!--container-->
 
 
 
 
-            <form name="formcontato" id="cadastro" action="">                     
-                <div class="field">
-                    <label for="name">Nome Completo *</label>
-                    <input class="validate" required pattern="[A-Za-zÀ-ú\s]+$" required minlength="2" maxlength="100" required
-                        type="text" name="name">
-                    <span class="helper-text" data-error="Preenche o nome corretamente"></span>
-                </div>
-            
-                <div class="field">
-                    <label for="name">Ponto Comercial *</label>
-                    <input name="pontocomercial" type="text" required id="ponto-comercial-input">            
-                </div>
-            
-            
-                <div class="field-group">
-                    <div class="field">
-                        <label for="address">Endereço *</label>
-                        <input required type="text" name="address">
-                    </div>
-                    <div id="ka" class="field">
-                        <label for="address2">Número / Complemento</label>
-                        <input required type="text" name='address2'>
-                    </div>
-            
-                </div>
-            
-            
-            
-                <div class="field-group">
-                    <div id="ll" class="field">
-                        <label for="address2">Estado</label>
-                        <select name="uf" class="browser-default">
-                            <option value="">Selecione o Estado</option>
-                        </select>
-            
-            
-                    </div>
-            
-                    <div id="ll" style="margin-left:10%;" class="field">
-                        <label for="city">Cidade</label>
-                        <select class="browser-default" name="city" disable>
-                            <option value="">Selecione a Cidade</option>
-            
-                        </select>
-                    </div>
-            
-                </div>
-            
-            
-                <div class="field-group">
-                    <div class="field">
-                        <label for="address2">Telefone *</label>
-                        <input name="telefone" id="telefone-input" pattern="[0-9]+$" type="tel" minlength="7" maxlength="11" required class="validate">
-                        <span class="helper-text" data-error="Preenche o telefone corretamente"></span>           
-                    </div>
-            
-                    <div id="ka" class="field">
-                        <label for="city">CPF *</label>
-                        <input name="cpf" id="cpf-input" pattern="[0-9]+$" type="text" required maxlength="11" minlength="11" class="validate">
-                        <span class="helper-text" data-error="Preenche o CPF corretamente"></span>
-                    </div>
-                </div>
-            
-                <div class="field-group">
-                    <div class="field">
-                        <label for="address2">Email *</label>
-                        <input name="email" type="email" required id="email-input" class="validate"">
-                        <span class=" helper-text" data-error="Preenche o e-mail corretamente"></span>           
-                    </div>
-            
-                    <div id="ka" class="field">
-                        <label for="city">Repetir Email *</label>
-                        <input  name="repetiremail" type="email" required id="Repetir-email-input" class="validate">
-                        <span class="helper-text" data-error="Preenche o e-mail corretamente"></span>
-                    </div>
-            
-                </div>
-                <div class="field-group">
-                    <div class="field">
-                        <label for="address2">Senha *</label>
-                        <input name="senha" type="password" minlength="8" required id="senha-input" class="validate">     
-                        <span class="helper-text" data-error="Mínimo de 8 caracteres"></span>
-                    </div>
-            
-                    <div id="ka" class="field">
-                        <label for="city">Repetir Senha *</label>
-                        <input name="repetirsenha" type="password" minlength="8" required id="repetir-senha-input" class="validate">      
-                        <span class="helper-text" data-error="Mínimo de 8 caracteres"></span>
-                    </div>          
-                </div>                      
-            </form>
-            
-
-            <div id="botao-cadastro" class="col s12 center">
-                <button name="action" type="submit" value="Cadastrar" class="waves-effect waves-light btn botao-cadastrar" onclick="return validar_form_contato()">Cadastrar</button>
-            </div>
-
-</div>
-</section> 
-
+    <form name="formcontato" id="cadastro" action="">
+      <div class="field">
+        <label for="name">Nome Completo *</label>
+        <input class="validate" required pattern="[A-Za-zÀ-ú\s]+$" required minlength="2" maxlength="100" 
+          type="text" name="name">
+        <span class="helper-text" data-error="Preencher o nome corretamente"></span>
+      </div>
+      <div class="field">
+        <label for="name">Ponto Comercial *</label>
+        <input  class="validate" name="pontocomercial" type="text" required id="ponto-comercial-input">
+        <span class="helper-text" data-error="Preencher o Ponto Comercial"></span>
+      </div>
+      <div class="field-group">
+        <div class="field">
+          <label for="address">Endereço *</label>
+          <input class="validate" required type="text" name="address">
+          <span class="helper-text" data-error="Preencher o seu Endereço"></span>
+        </div>
+        <div id="ka" class="field">
+          <label for="address2">Número / Complemento</label>
+          <input required type="text" name='address2'>
+        </div>
+      </div>
+      <div class="field-group">
+        <div id="ll" class="field">
+          <label for="address2">Estado</label>
+          <select name="uf" class="browser-default">
+            <option value="">Selecione o Estado</option>
+          </select>
+        </div>
+        <div id="ll" style="margin-left:10%;" class="field">
+          <label for="city">Cidade</label>
+          <select class="browser-default" name="city" disable>
+            <option value="">Selecione a Cidade</option>
+          </select>
+        </div>
+      </div>
+      <div class="field-group">
+        <div class="field">
+          <label for="address2">Telefone *</label>
+          <input name="telefone" id="telefone-input" pattern="[0-9]+$" type="tel" minlength="7" maxlength="11" required
+            class="validate">
+          <span class="helper-text" data-error="Preenche o telefone corretamente"></span>
+        </div>
+        <div id="ka" class="field">
+          <label for="city">CPF *</label>
+          <input name="cpf" id="cpf-input" pattern="[0-9]+$" type="text" required maxlength="11" minlength="11"
+            class="validate">
+          <span class="helper-text" data-error="Preenche o CPF corretamente"></span>
+        </div>
+      </div>
+      <div class="field-group">
+        <div class="field">
+          <label for="address2">Email *</label>
+          <input name="email" type="email" required id="email-input" class="validate"">
+          <span class=" helper-text" data-error="Preenche o e-mail corretamente"></span>
+        </div>
+        <div id="ka" class="field">
+          <label for="city">Repetir Email *</label>
+          <input name="repetiremail" type="email" required id="Repetir-email-input" class="validate">
+          <span class="helper-text" data-error="Preenche o e-mail corretamente"></span>
+        </div>
+      </div>
+      <div class="field-group">
+        <div class="field">
+          <label for="address2">Senha *</label>
+          <input name="senha" type="password" minlength="8" required id="senha-input" class="validate">
+          <span class="helper-text" data-error="Mínimo de 8 caracteres"></span>
+        </div>
+        <div id="ka" class="field">
+          <label for="city">Repetir Senha *</label>
+          <input name="repetirsenha" type="password" minlength="8" required id="repetir-senha-input" class="validate">
+          <span class="helper-text" data-error="Mínimo de 8 caracteres"></span>
+        </div>
+      </div>
+    </form>
+    <div id="botao-cadastro" class="col s12 center">
+      <button name="action" type="submit" value="Cadastrar" class="waves-effect waves-light btn botao-cadastrar"
+        onclick="return validar_form_contato()">Cadastrar</button>
+    </div>
+  </div>
+</section>
 
 
 
@@ -214,17 +199,8 @@
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="js/cadastro.js"></script>
-    <script src="js/scriptrenata.js"></script>
-
-
-
-
-
-
-
-
-
+<script src="js/cadastro.js"></script>
+<script src="js/scriptrenata.js"></script>
 
 
 
