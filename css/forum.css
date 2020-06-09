@@ -2,6 +2,17 @@
 
 /* Page FORUM */
 
+
+section#page-produtos{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 4%;
+    padding-bottom: 4%;
+
+
+}
+
 .nome-forum h2{
     margin-top: 10%;
     margin-bottom: 4%;
