@@ -295,21 +295,13 @@ h3{
 
 /*CERTIFICADO*/
 
-
-#certificado h3{
- 
-    margin-bottom: 0;
-    font-size: 40px;
-    text-align: center;
- 
-}
-
 .icon-left{
-    margin-top:125%;
+    margin-top:55%;
     font-size:55px;
     color: #264e20;
 
 }
+
 
 
 
@@ -320,15 +312,10 @@ h3{
 
 }
 
-
-@media screen and (max-width: 1000px) {
-
-    #certificado h3{
-        padding-top: 15%;
-        margin-left: 0%;
-      
-    }
-
+#organicMax h3{
+    padding-top: 8%;
+    margin-left: 20%;
+    margin-bottom: 0%;
 }
 
 
@@ -337,31 +324,12 @@ h3{
 
 @media screen and (max-width: 700px) {
 
-    #certificado h3{
-        padding-top: 40%;
-        margin-left: 0%;
-        font-size: 30px;
-    }
-
+#organicMax h3{
+    font-size: 30px;
+    margin-top: 25%;
+ 
 }
 
-
-
-@media screen and (max-width: 300px) {
-
-    #certificado h3{
-        padding-top: 20%;
-       
-        font-size: 20px;
-    }
-
-
-.icon-left{
-    margin-top:55%;
-    font-size:55px;
-    color: #264e20;
-
-}
 
 }
 
